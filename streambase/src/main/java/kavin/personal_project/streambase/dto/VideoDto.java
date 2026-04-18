@@ -1,5 +1,6 @@
 package kavin.personal_project.streambase.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -12,5 +13,7 @@ public class VideoDto {
     private String description;
     private String location;
     private String author;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime uploadedTime;
 }
