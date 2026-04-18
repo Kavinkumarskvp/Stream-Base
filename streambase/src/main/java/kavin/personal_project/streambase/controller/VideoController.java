@@ -52,9 +52,4 @@ public class VideoController {
         return ResponseEntity.noContent().build();
     }
 
-    @ExceptionHandler(VideoNotFoundException.class)
-    public ResponseEntity<Void> handleVideoNotFound() {
-        return ResponseEntity.notFound().build();
-    }
-
 }
