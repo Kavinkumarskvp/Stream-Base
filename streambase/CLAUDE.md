@@ -97,11 +97,18 @@ design concepts. Every feature you build maps directly to a real interview quest
 - [x] Define Video entity with Flyway migration (DB-first via DBeaver)
 - [x] Created `VideoEntity`, `VideoRepository`, `VideoService`, `VideoController`
 - [x] Added `VideoDto` + MapStruct mapper (Entity → DTO)
-- [x] Added `VideoNotFoundException` with controller-level `@ExceptionHandler`
-- [x] Implemented `GET /api/videos` and `GET /api/videos/{id}`
+- [x] Added `GlobalExceptionHandler` (`@ControllerAdvice`) with 404 + 400 handling
+- [x] Implemented full CRUD: `GET/POST/PUT/DELETE /api/videos`
+- [x] Added `CreateVideoRequest` and `UpdateVideoRequest` DTOs with `@Valid` validation
+- [x] Wrote multi-stage `Dockerfile` for the Spring Boot app
+- [x] `compose.yaml` with postgres + 3 app instances (app-1, app-2, app-3) + Nginx
+- [x] `nginx.conf` with round-robin upstream across all 3 instances
+- [x] Added `HealthController` returning instance hostname (`GET /health`)
+- [x] Verified round-robin: 20 requests distributed across all 3 instances via Nginx
+- [x] `least_conn` strategy configured in `nginx.conf`
 
 ### 🔄 In Progress
-- [ ] **DAY 1, Task 4** — complete remaining CRUD endpoints (POST, PUT, DELETE)
+- [ ] **DAY 3, Task 1** — Add Redis service to `docker-compose.yml`
 
 ---
 
@@ -115,11 +122,11 @@ design concepts. Every feature you build maps directly to a real interview quest
 
 - [x] 1. Install Docker Desktop and verify with `docker --version`
 - [x] 2. Create Spring Boot project with Web + JPA + PostgreSQL dependencies
-- [ ] 3. Define Video entity: `id`, `title`, `description`, `url`, `uploadedBy`, `createdAt`
-- [ ] 4. Create `VideoController` with CRUD endpoints (`GET/POST/PUT/DELETE /api/videos`)
-- [ ] 5. Write `docker-compose.yml` with app + postgres services
-- [ ] 6. Run `docker-compose up` and test all endpoints with curl
-- [ ] 7. Verify data persists across container restarts
+- [x] 3. Define Video entity: `id`, `title`, `description`, `url`, `uploadedBy`, `createdAt`
+- [x] 4. Create `VideoController` with CRUD endpoints (`GET/POST/PUT/DELETE /api/videos`)
+- [x] 5. Write `docker-compose.yml` with app + postgres services
+- [x] 6. Run `docker-compose up` and test all endpoints with curl
+- [x] 7. Verify data persists across container restarts
 
 **✅ Day 1 Outcome:** StreamBase API running in Docker. You can create, list, update,
 and delete videos via REST.
@@ -129,10 +136,10 @@ and delete videos via REST.
 ### DAY 2 — Scale the API with Load Balancing
 **Theme:** Load Balancing
 
-- [ ] 1. Modify docker-compose to run 3 instances of your API (app-1, app-2, app-3)
-- [ ] 2. Add Nginx service with upstream config pointing to all 3 instances
-- [ ] 3. Configure round-robin load balancing in `nginx.conf`
-- [ ] 4. Add a `/health` endpoint that returns the instance hostname
+- [x] 1. Modify docker-compose to run 3 instances of your API (app-1, app-2, app-3)
+- [x] 2. Add Nginx service with upstream config pointing to all 3 instances
+- [x] 3. Configure round-robin load balancing in `nginx.conf`
+- [x] 4. Add a `/health` endpoint that returns the instance hostname
 - [ ] 5. Hit the API 20 times via Nginx — verify requests distribute across instances
 - [ ] 6. Try `least_conn` strategy in Nginx, compare behavior under load
 
