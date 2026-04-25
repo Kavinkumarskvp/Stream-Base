@@ -8,6 +8,8 @@ import kavin.personal_project.streambase.exception.VideoNotFoundException;
 import kavin.personal_project.streambase.mapper.VideoMapper;
 import kavin.personal_project.streambase.repository.VideoRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -26,6 +28,7 @@ public class VideoService {
         return videoRepository.findAll().stream().map(videoMapper::toDto).toList();
     }
 
+    @Cacheable(value = "videos", key = "#id")
     public VideoDto getVideo(Long id) {
 
         var video = videoRepository.findById(id).orElseThrow(VideoNotFoundException::new);
@@ -40,6 +43,7 @@ public class VideoService {
         return videoMapper.toDto(entity);
     }
 
+    @CacheEvict(value = "videos", key = "#id")
     public VideoDto updateVideo(Long id, UpdateVideoRequest request) {
 
         var entity = videoRepository.findById(id).orElseThrow(VideoNotFoundException::new);
@@ -49,6 +53,7 @@ public class VideoService {
         return videoMapper.toDto(entity);
     }
 
+    @CacheEvict(value = "videos", key = "#id")
     public void deleteVideo(Long id) {
 
         if (!videoRepository.existsById(id)) {

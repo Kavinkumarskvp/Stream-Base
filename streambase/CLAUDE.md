@@ -87,28 +87,8 @@ design concepts. Every feature you build maps directly to a real interview quest
 
 ## My Current Progress
 
-### ✅ Completed
-- [x] Installed Docker Desktop and verified with `docker --version`
-- [x] Created Spring Boot project (Spring Web + Spring Data JPA + PostgreSQL Driver)
-  - Spring Boot 4.0.5, Java 21, Maven
-  - Module created in IntelliJ
-- [x] Added MapStruct, Flyway, Validation dependencies
-- [x] Configured datasource + `ddl-auto: validate` in `application.yaml`
-- [x] Define Video entity with Flyway migration (DB-first via DBeaver)
-- [x] Created `VideoEntity`, `VideoRepository`, `VideoService`, `VideoController`
-- [x] Added `VideoDto` + MapStruct mapper (Entity → DTO)
-- [x] Added `GlobalExceptionHandler` (`@ControllerAdvice`) with 404 + 400 handling
-- [x] Implemented full CRUD: `GET/POST/PUT/DELETE /api/videos`
-- [x] Added `CreateVideoRequest` and `UpdateVideoRequest` DTOs with `@Valid` validation
-- [x] Wrote multi-stage `Dockerfile` for the Spring Boot app
-- [x] `compose.yaml` with postgres + 3 app instances (app-1, app-2, app-3) + Nginx
-- [x] `nginx.conf` with round-robin upstream across all 3 instances
-- [x] Added `HealthController` returning instance hostname (`GET /health`)
-- [x] Verified round-robin: 20 requests distributed across all 3 instances via Nginx
-- [x] `least_conn` strategy configured in `nginx.conf`
-
 ### 🔄 In Progress
-- [ ] **DAY 3, Task 1** — Add Redis service to `docker-compose.yml`
+- [ ] **DAY 4, Task 1** — Add a second PostgreSQL container (`postgres-replica`) to docker-compose
 
 ---
 
@@ -140,8 +120,8 @@ and delete videos via REST.
 - [x] 2. Add Nginx service with upstream config pointing to all 3 instances
 - [x] 3. Configure round-robin load balancing in `nginx.conf`
 - [x] 4. Add a `/health` endpoint that returns the instance hostname
-- [ ] 5. Hit the API 20 times via Nginx — verify requests distribute across instances
-- [ ] 6. Try `least_conn` strategy in Nginx, compare behavior under load
+- [x] 5. Hit the API 20 times via Nginx — verify requests distribute across instances
+- [x] 6. Try `least_conn` strategy in Nginx, compare behavior under load
 
 **✅ Day 2 Outcome:** StreamBase runs behind a load balancer. Three API instances share
 traffic. You can explain horizontal scaling.
@@ -151,13 +131,13 @@ traffic. You can explain horizontal scaling.
 ### DAY 3 — Cache Video Catalog with Redis
 **Theme:** Caching Strategies
 
-- [ ] 1. Add Redis service to `docker-compose.yml`
-- [ ] 2. Add `spring-boot-starter-data-redis` to your project
-- [ ] 3. Implement cache-aside pattern on `GET /api/videos/{id}`
-- [ ] 4. Set TTL of 5 minutes on cached video entries
-- [ ] 5. Add cache invalidation: on PUT/DELETE, remove the Redis key
-- [ ] 6. Use `redis-cli` inside the container to inspect cached keys manually
-- [ ] 7. Test: call GET 100 times, verify only 1st hit touches PostgreSQL
+- [x] 1. Add Redis service to `docker-compose.yml`
+- [x] 2. Add `spring-boot-starter-data-redis` to your project
+- [x] 3. Implement cache-aside pattern on `GET /api/videos/{id}`
+- [x] 4. Set TTL of 5 minutes on cached video entries
+- [x] 5. Add cache invalidation: on PUT/DELETE, remove the Redis key
+- [x] 6. Use `redis-cli` inside the container to inspect cached keys manually
+- [x] 7. Test: call GET 100 times, verify only 1st hit touches PostgreSQL
 
 **✅ Day 3 Outcome:** Video metadata is cached. Reads are ~10x faster on cache hit.
 You understand cache-aside, TTL, and invalidation.
@@ -360,129 +340,6 @@ on read vs write and the celebrity problem.
 
 **✅ Day 15 Outcome:** StreamBase data is distributed across shards. You understand
 consistent hashing, rebalancing, and hot spots.
-
----
-
-## WEEK 4 — Mock Interviews & Mastery
-*Practice designing systems under time pressure using your StreamBase experience*
-
----
-
-### DAY 16 — Mock: "Design a URL Shortener"
-**Theme:** Timed Design Practice
-
-- [ ] 1. Set a 35-minute timer (simulating interview conditions)
-- [ ] 2. Spend 5 min: clarify requirements + back-of-envelope math
-- [ ] 3. Spend 5 min: draw high-level architecture (boxes + arrows)
-- [ ] 4. Spend 15 min: deep dive — schema, API, encoding, caching, scaling
-- [ ] 5. Spend 5 min: discuss trade-offs (SQL vs NoSQL, base62 vs hash)
-- [ ] 6. Spend 5 min: review against your Day 6-7 StreamBase implementation
-- [ ] 7. Document: what did you forget under time pressure? Drill those gaps
-
-**✅ Day 16 Outcome:** First timed mock done. You identified your weak spots
-when designing under pressure.
-
----
-
-### DAY 17 — Mock: "Design a Notification System"
-**Theme:** Reliability + Delivery
-
-- [ ] 1. Timer: 35 minutes. Follow the 5-step framework
-- [ ] 2. Key depth areas: what if a notification fails? Retry strategy?
-- [ ] 3. Discuss: at-least-once vs exactly-once delivery trade-offs
-- [ ] 4. Explain: idempotency keys to prevent duplicate notifications
-- [ ] 5. Discuss: ordering guarantees — does notification order matter?
-- [ ] 6. Map your answer to StreamBase Day 9: subscription notification pipeline
-- [ ] 7. Review: what would you change at 100x scale?
-
-**✅ Day 17 Outcome:** Notification system mock done. You can discuss reliability,
-retries, and delivery guarantees from experience.
-
----
-
-### DAY 18 — Mock: "Design WhatsApp/Chat"
-**Theme:** Real-Time at Scale
-
-- [ ] 1. Timer: 35 minutes. Follow the 5-step framework
-- [ ] 2. Depth: WebSocket connection management across servers
-- [ ] 3. Explain: message delivery states (sent → delivered → read)
-- [ ] 4. Discuss: offline message queue — what happens when user is offline?
-- [ ] 5. Discuss: group chat fan-out — 500 members, each on different servers
-- [ ] 6. Map your answer to StreamBase Days 11-13: live comments system
-- [ ] 7. Review: your Redis Pub/Sub multi-server solution IS the chat answer
-
-**✅ Day 18 Outcome:** Chat system mock done. Your StreamBase live comments
-experience maps directly to WhatsApp design.
-
----
-
-### DAY 19 — Mock: "Design Netflix/YouTube Feed"
-**Theme:** Feed + Content Delivery
-
-- [ ] 1. Timer: 35 minutes. Follow the 5-step framework
-- [ ] 2. Discuss: fan-out on read vs write (you built both in Day 14!)
-- [ ] 3. Address the celebrity problem with hybrid approach
-- [ ] 4. Discuss: feed ranking — chronological vs algorithmic
-- [ ] 5. Add: CDN for video content delivery (explain caching layers)
-- [ ] 6. Discuss: video transcoding pipeline (map to Day 5 async processing)
-- [ ] 7. This one IS StreamBase — you literally built it
-
-**✅ Day 19 Outcome:** Feed system mock done. You can design Netflix-scale systems
-because you built a mini version.
-
----
-
-### DAY 20 — Final Review + Concept Rapid-Fire
-**Theme:** Interview Readiness
-
-- [ ] 1. Go through the Core Concepts Checklist below
-- [ ] 2. For each concept: explain it aloud, mapping to your StreamBase feature
-- [ ] 3. For any weak spots: re-run the relevant StreamBase experiment (15 min each)
-- [ ] 4. Practice the opening statement: "I recently built a streaming platform..."
-- [ ] 5. Prepare 3 failure stories from Chaos Day (interviewers love these)
-- [ ] 6. Time yourself explaining any system in 2 minutes (elevator pitch practice)
-
-**✅ Day 20 Outcome:** You're interview-ready. Every concept maps to a real feature
-you built. Go get the job.
-
----
-
-## Interview Answer Framework (5-Step)
-Use this structure for every system design answer in Weeks 3-4 and in real interviews.
-
-**Step 1 — Clarify Requirements (~2 min)**
-- Ask about scale: users, QPS, data volume
-- Identify core features vs nice-to-have
-- Determine read-heavy vs write-heavy workload
-- Clarify latency and consistency requirements
-
-**Step 2 — Back-of-Envelope Math (~2 min)**
-- Estimate QPS: DAU x actions/day / 86,400
-- Estimate storage: records x avg size x retention period
-- Estimate bandwidth: QPS x avg payload size
-- Estimate cache memory: 80/20 rule on daily requests
-
-**Step 3 — High-Level Design (~5 min)**
-- Draw core boxes: client, LB, app servers, DB, cache, queue
-- Show main data flows with directional arrows
-- Keep it to 5-8 components maximum
-- Label each component with its purpose
-
-**Step 4 — Deep Dive (~15-20 min)**
-- Design API endpoints (REST verbs, paths, payloads)
-- Design database schema (tables, indexes, relationships)
-- Identify the bottleneck and scale it (cache, replicate, shard)
-- Add async processing for heavy operations
-- Discuss failure handling and recovery
-
-**Step 5 — Trade-offs & Scaling (~5 min)**
-- What changes at 10x and 100x scale?
-- What trade-offs did you make and what are the alternatives?
-- Monitoring, alerting, failure scenarios
-
-> **Interview Mantra:** "I built StreamBase. For feature X, I used Y because Z.
-> The main trade-off was..." — Map every answer back to what you built.
-> Experience beats theory.
 
 ---
 
