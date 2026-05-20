@@ -11,6 +11,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -23,11 +24,13 @@ public class VideoService {
     private final VideoMapper videoMapper;
 
 
+    @Transactional(readOnly = true)
     public List<VideoDto> getAllVideos() {
 
         return videoRepository.findAll().stream().map(videoMapper::toDto).toList();
     }
 
+    @Transactional(readOnly = true)
     @Cacheable(value = "videos", key = "#id")
     public VideoDto getVideo(Long id) {
 
@@ -35,6 +38,7 @@ public class VideoService {
         return videoMapper.toDto(video);
     }
 
+    @Transactional
     public VideoDto createVideo(CreateVideoRequest request) {
 
         VideoEntity entity = videoMapper.toEntity(request);
@@ -43,6 +47,7 @@ public class VideoService {
         return videoMapper.toDto(entity);
     }
 
+    @Transactional
     @CacheEvict(value = "videos", key = "#id")
     public VideoDto updateVideo(Long id, UpdateVideoRequest request) {
 
@@ -53,6 +58,7 @@ public class VideoService {
         return videoMapper.toDto(entity);
     }
 
+    @Transactional
     @CacheEvict(value = "videos", key = "#id")
     public void deleteVideo(Long id) {
 

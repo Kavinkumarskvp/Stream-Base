@@ -1,9 +1,13 @@
 spring:
   datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-
+    primary:
+      url: ${DB_URL}
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+    replica:
+      url: ${DB_REPLICA_URL}
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
   data:
     redis:
       host: ${REDIS_HOST}

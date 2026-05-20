@@ -1,0 +1,10 @@
+CLAUDE.md
+compose.yaml
+nginx.conf
+.gitignore
+graphify-out/
+docker/
+.run/
+.idea/
+src/main/resources/application.yaml
+src/main/resources/application-dev.yaml

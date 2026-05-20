@@ -88,7 +88,8 @@ design concepts. Every feature you build maps directly to a real interview quest
 ## My Current Progress
 
 ### 🔄 In Progress
-- [ ] **DAY 4, Task 1** — Add a second PostgreSQL container (`postgres-replica`) to docker-compose
+- [ ] **DAY 4, Task 5** — Intentionally stop the replica — observe what your app does
+- [ ] **DAY 4, Task 6** — Add fallback logic: if replica is down, read from primary
 
 ---
 
@@ -147,10 +148,10 @@ You understand cache-aside, TTL, and invalidation.
 ### DAY 4 — Add Read Replicas for the Database
 **Theme:** Database Replication
 
-- [ ] 1. Add a second PostgreSQL container (`postgres-replica`) to docker-compose
-- [ ] 2. Configure streaming replication from primary to replica
-- [ ] 3. Modify your repository layer: route writes to primary, reads to replica
-- [ ] 4. Verify: insert a video, then immediately read from replica
+- [x] 1. Add a second PostgreSQL container (`postgres-replica`) to docker-compose
+- [x] 2. Configure streaming replication from primary to replica
+- [x] 3. Modify your repository layer: route writes to primary, reads to replica
+- [x] 4. Verify: insert a video, then immediately read from replica
 - [ ] 5. Intentionally stop the replica — observe what your app does
 - [ ] 6. Add fallback logic: if replica is down, read from primary
 
@@ -381,3 +382,13 @@ Client --> Nginx (LB) --> 3x Spring Boot API --> Redis (Cache)
 
 All running locally in one docker-compose file.
 ```
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- ALWAYS read graphify-out/GRAPH_REPORT.md before reading any source files, running grep/glob searches, or answering codebase questions. The graph is your primary map of the codebase.
+- IF graphify-out/wiki/index.md EXISTS, navigate it instead of reading raw files
+- For cross-module "how does X relate to Y" questions, prefer `graphify query "<question>"`, `graphify path "<A>" "<B>"`, or `graphify explain "<concept>"` over grep — these traverse the graph's EXTRACTED + INFERRED edges instead of scanning files
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
