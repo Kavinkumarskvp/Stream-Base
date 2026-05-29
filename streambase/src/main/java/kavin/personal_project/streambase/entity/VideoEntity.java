@@ -34,8 +34,18 @@ public class VideoEntity {
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 
+    @Builder.Default
+    @Enumerated(EnumType.STRING)
+    private VideoStatus status = VideoStatus.UPLOADED;
+
     @PrePersist
     protected void onCreate() {
         this.createdAt = LocalDateTime.now();
+    }
+
+    public enum VideoStatus {
+        UPLOADED,
+        PROCESSING,
+        READY
     }
 }

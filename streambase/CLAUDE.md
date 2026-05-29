@@ -88,8 +88,7 @@ design concepts. Every feature you build maps directly to a real interview quest
 ## My Current Progress
 
 ### 🔄 In Progress
-- [ ] **DAY 4, Task 5** — Intentionally stop the replica — observe what your app does
-- [ ] **DAY 4, Task 6** — Add fallback logic: if replica is down, read from primary
+- [ ] **DAY 6, Task 1** — Write requirements: short link for any video, redirect on access, track click count
 
 ---
 
@@ -152,8 +151,8 @@ You understand cache-aside, TTL, and invalidation.
 - [x] 2. Configure streaming replication from primary to replica
 - [x] 3. Modify your repository layer: route writes to primary, reads to replica
 - [x] 4. Verify: insert a video, then immediately read from replica
-- [ ] 5. Intentionally stop the replica — observe what your app does
-- [ ] 6. Add fallback logic: if replica is down, read from primary
+- [x] 5. Intentionally stop the replica — observe what your app does
+- [x] 6. Add fallback logic: if replica is down, read from primary
 
 **✅ Day 4 Outcome:** StreamBase has read scaling via replicas. You've experienced
 replication lag and failover firsthand.
@@ -163,13 +162,13 @@ replication lag and failover firsthand.
 ### DAY 5 — Async Video Processing Pipeline
 **Theme:** Message Queues (Kafka)
 
-- [ ] 1. Add Kafka service to `docker-compose.yml` (use `confluentinc/cp-kafka` image)
-- [ ] 2. On video upload (`POST /api/videos`), publish a `video.uploaded` event to Kafka topic
-- [ ] 3. Create a `VideoProcessor` consumer service that listens to the topic
-- [ ] 4. Consumer simulates: thumbnail generation (sleep 3s) + metadata extraction
-- [ ] 5. Update video status: `UPLOADED` → `PROCESSING` → `READY`
-- [ ] 6. Crash the consumer mid-processing, restart it — verify Kafka replays the message
-- [ ] 7. Add a dead-letter topic for permanently failed processing jobs
+- [x] 1. Add Kafka service to `docker-compose.yml` (use `apache/kafka:4.3.0` image, KRaft mode)
+- [x] 2. On video upload (`POST /api/videos`), publish a `video.uploaded` event to Kafka topic
+- [x] 3. Create a `VideoProcessor` consumer service that listens to the topic
+- [x] 4. Consumer simulates: thumbnail generation (sleep 3s) + metadata extraction
+- [x] 5. Update video status: `UPLOADED` → `PROCESSING` → `READY`
+- [x] 6. Crash the consumer mid-processing, restart it — verify Kafka replays the message
+- [x] 7. Add a dead-letter topic for permanently failed processing jobs
 
 **✅ Day 5 Outcome:** Videos are processed asynchronously. The upload API returns
 instantly. You understand Kafka topics, consumer groups, DLQ, and replay.

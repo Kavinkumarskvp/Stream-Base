@@ -4,12 +4,14 @@ import kavin.personal_project.streambase.dto.CreateVideoRequest;
 import kavin.personal_project.streambase.dto.UpdateVideoRequest;
 import kavin.personal_project.streambase.dto.VideoDto;
 import kavin.personal_project.streambase.entity.VideoEntity;
+import kavin.personal_project.streambase.event.VideoUploadedEvent;
 import kavin.personal_project.streambase.exception.VideoNotFoundException;
 import kavin.personal_project.streambase.mapper.VideoMapper;
 import kavin.personal_project.streambase.repository.VideoRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,6 +24,7 @@ public class VideoService {
 
     private final VideoRepository videoRepository;
     private final VideoMapper videoMapper;
+    private final KafkaTemplate<String, Object> kafkaTemplate;
 
 
     @Transactional(readOnly = true)
@@ -43,6 +46,8 @@ public class VideoService {
 
         VideoEntity entity = videoMapper.toEntity(request);
         entity = videoRepository.save(entity);
+
+        kafkaTemplate.send("video.uploaded", new VideoUploadedEvent(entity.getId(), entity.getTitle()));
 
         return videoMapper.toDto(entity);
     }

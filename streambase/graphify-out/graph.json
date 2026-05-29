@@ -8,7 +8,7 @@
       "file_type": "code",
       "source_file": "src/test/java/kavin/personal_project/streambase/StreambaseApplicationTests.java",
       "source_location": "L9",
-      "community": 6,
+      "community": 7,
       "norm_label": ".contextloads()",
       "id": "streambase_streambaseapplicationtests_streambaseapplicationtests_contextloads"
     },
@@ -17,7 +17,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/StreambaseApplication.java",
       "source_location": "L7",
-      "community": 6,
+      "community": 7,
       "norm_label": "streambaseapplication",
       "id": "streambase_streambaseapplication_streambaseapplication"
     },
@@ -26,7 +26,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/StreambaseApplication.java",
       "source_location": "L11",
-      "community": 6,
+      "community": 7,
       "norm_label": ".main()",
       "id": "streambase_streambaseapplication_streambaseapplication_main"
     },
@@ -35,7 +35,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/UpdateVideoRequest.java",
       "source_location": "L1",
-      "community": 10,
+      "community": 11,
       "norm_label": "updatevideorequest.java",
       "id": "src_main_java_kavin_personal_project_streambase_dto_updatevideorequest_java"
     },
@@ -44,7 +44,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/UpdateVideoRequest.java",
       "source_location": "L7",
-      "community": 10,
+      "community": 11,
       "norm_label": "updatevideorequest",
       "id": "dto_updatevideorequest_updatevideorequest"
     },
@@ -53,7 +53,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/CreateVideoRequest.java",
       "source_location": "L7",
-      "community": 15,
+      "community": 16,
       "norm_label": "createvideorequest",
       "id": "dto_createvideorequest_createvideorequest"
     },
@@ -62,7 +62,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/VideoDto.java",
       "source_location": "L8",
-      "community": 16,
+      "community": 17,
       "norm_label": "videodto",
       "id": "dto_videodto_videodto"
     },
@@ -71,7 +71,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/repository/VideoRepository.java",
       "source_location": "L1",
-      "community": 11,
+      "community": 12,
       "norm_label": "videorepository.java",
       "id": "src_main_java_kavin_personal_project_streambase_repository_videorepository_java"
     },
@@ -80,7 +80,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/repository/VideoRepository.java",
       "source_location": "L6",
-      "community": 11,
+      "community": 12,
       "norm_label": "videorepository",
       "id": "repository_videorepository_videorepository"
     },
@@ -89,7 +89,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/config/RedisConfig.java",
       "source_location": "L1",
-      "community": 7,
+      "community": 8,
       "norm_label": "redisconfig.java",
       "id": "src_main_java_kavin_personal_project_streambase_config_redisconfig_java"
     },
@@ -98,7 +98,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/config/RedisConfig.java",
       "source_location": "L17",
-      "community": 7,
+      "community": 8,
       "norm_label": "redisconfig",
       "id": "config_redisconfig_redisconfig"
     },
@@ -107,7 +107,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/config/RedisConfig.java",
       "source_location": "L20",
-      "community": 7,
+      "community": 8,
       "norm_label": ".cachemanager()",
       "id": "config_redisconfig_redisconfig_cachemanager"
     },
@@ -116,7 +116,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/entity/VideoEntity.java",
       "source_location": "L8",
-      "community": 12,
+      "community": 13,
       "norm_label": "videoentity",
       "id": "entity_videoentity_videoentity"
     },
@@ -125,25 +125,16 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/entity/VideoEntity.java",
       "source_location": "L37",
-      "community": 12,
+      "community": 13,
       "norm_label": ".oncreate()",
       "id": "entity_videoentity_videoentity_oncreate"
-    },
-    {
-      "label": "VideoMapper.java",
-      "file_type": "code",
-      "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
-      "source_location": "L1",
-      "community": 0,
-      "norm_label": "videomapper.java",
-      "id": "src_main_java_kavin_personal_project_streambase_mapper_videomapper_java"
     },
     {
       "label": "VideoMapper",
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L11",
-      "community": 0,
+      "community": 2,
       "norm_label": "videomapper",
       "id": "mapper_videomapper_videomapper"
     },
@@ -152,7 +143,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L14",
-      "community": 0,
+      "community": 2,
       "norm_label": ".todto()",
       "id": "mapper_videomapper_videomapper_todto"
     },
@@ -161,7 +152,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L20",
-      "community": 0,
+      "community": 2,
       "norm_label": ".toentity()",
       "id": "mapper_videomapper_videomapper_toentity"
     },
@@ -170,7 +161,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L24",
-      "community": 0,
+      "community": 2,
       "norm_label": ".updateentity()",
       "id": "mapper_videomapper_videomapper_updateentity"
     },
@@ -179,7 +170,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/HealthController.java",
       "source_location": "L7",
-      "community": 13,
+      "community": 14,
       "norm_label": "healthcontroller",
       "id": "controller_healthcontroller_healthcontroller"
     },
@@ -188,7 +179,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/HealthController.java",
       "source_location": "L10",
-      "community": 13,
+      "community": 14,
       "norm_label": ".health()",
       "id": "controller_healthcontroller_healthcontroller_health"
     },
@@ -197,7 +188,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/VideoController.java",
       "source_location": "L1",
-      "community": 0,
+      "community": 2,
       "norm_label": "videocontroller.java",
       "id": "src_main_java_kavin_personal_project_streambase_controller_videocontroller_java"
     },
@@ -206,7 +197,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/VideoController.java",
       "source_location": "L17",
-      "community": 0,
+      "community": 2,
       "norm_label": "videocontroller",
       "id": "controller_videocontroller_videocontroller"
     },
@@ -215,7 +206,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L26",
-      "community": 0,
+      "community": 2,
       "norm_label": ".getallvideos()",
       "id": "service_videoservice_videoservice_getallvideos"
     },
@@ -224,7 +215,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L31",
-      "community": 0,
+      "community": 2,
       "norm_label": ".getvideo()",
       "id": "service_videoservice_videoservice_getvideo"
     },
@@ -233,7 +224,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L38",
-      "community": 0,
+      "community": 2,
       "norm_label": ".createvideo()",
       "id": "service_videoservice_videoservice_createvideo"
     },
@@ -242,7 +233,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L46",
-      "community": 0,
+      "community": 2,
       "norm_label": ".updatevideo()",
       "id": "service_videoservice_videoservice_updatevideo"
     },
@@ -251,7 +242,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L56",
-      "community": 0,
+      "community": 2,
       "norm_label": ".deletevideo()",
       "id": "service_videoservice_videoservice_deletevideo"
     },
@@ -260,7 +251,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/exception/VideoNotFoundException.java",
       "source_location": "L3",
-      "community": 14,
+      "community": 15,
       "norm_label": "videonotfoundexception",
       "id": "exception_videonotfoundexception_videonotfoundexception"
     },
@@ -269,7 +260,7 @@
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "community": 14,
+      "community": 15,
       "norm_label": "runtimeexception",
       "id": "runtimeexception"
     },
@@ -278,7 +269,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L11",
-      "community": 8,
+      "community": 9,
       "norm_label": "globalexceptionhandler",
       "id": "exception_globalexceptionhandler_globalexceptionhandler"
     },
@@ -287,7 +278,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L14",
-      "community": 8,
+      "community": 9,
       "norm_label": ".handlevideonotfound()",
       "id": "exception_globalexceptionhandler_globalexceptionhandler_handlevideonotfound"
     },
@@ -296,7 +287,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L19",
-      "community": 8,
+      "community": 9,
       "norm_label": ".handleinvalidparam()",
       "id": "exception_globalexceptionhandler_globalexceptionhandler_handleinvalidparam"
     },
@@ -309,7 +300,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "postgres-primary (docker service)",
       "id": "compose_postgres_primary"
     },
@@ -335,7 +326,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "redis (docker service)",
       "id": "compose_redis"
     },
@@ -348,7 +339,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "app-1 (spring boot instance)",
       "id": "compose_app_1"
     },
@@ -361,7 +352,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "app-2 (spring boot instance)",
       "id": "compose_app_2"
     },
@@ -374,7 +365,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "app-3 (spring boot instance)",
       "id": "compose_app_3"
     },
@@ -387,7 +378,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "nginx (load balancer service)",
       "id": "compose_nginx"
     },
@@ -400,7 +391,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "application.yaml (spring boot config)",
       "id": "application_yaml_config"
     },
@@ -413,7 +404,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "application-dev.yaml (dev profile config)",
       "id": "application_dev_yaml_config"
     },
@@ -426,7 +417,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 0,
       "norm_label": "streambase system design learning project",
       "id": "claude_md_streambase_project"
     },
@@ -440,7 +431,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Cache-aside chosen for video metadata reads: app checks Redis first, falls back to PostgreSQL on miss, then populates the cache. Provides ~10x read speedup on cache hit. TTL of 5 minutes balances freshness vs performance. Cache invalidation on PUT/DELETE ensures consistency.",
-      "community": 2,
+      "community": 0,
       "norm_label": "cache-aside pattern",
       "id": "claude_md_cache_aside_pattern"
     },
@@ -468,7 +459,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Kafka replaces RabbitMQ throughout because Kafka is more commonly asked about in system design interviews. Kafka supports message replay and dead-letter topics, enabling the async video processing pipeline and notification fan-out scenarios.",
-      "community": 2,
+      "community": 0,
       "norm_label": "kafka chosen over rabbitmq",
       "id": "claude_md_kafka_over_rabbitmq"
     },
@@ -482,7 +473,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Consistent hashing ring implemented to distribute video IDs across PostgreSQL shards. When a new shard is added, only ~1/3 of keys need to move (not all), unlike naive modulo hashing \u2014 teaches hot shard and rebalancing strategies.",
-      "community": 2,
+      "community": 0,
       "norm_label": "consistent hashing for db sharding",
       "id": "claude_md_consistent_hashing"
     },
@@ -496,7 +487,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Pull model (fan-out on read) is slow at scale due to querying all followed creators. Push model (fan-out on write) pre-computes Redis feed lists for fast reads. Hybrid chosen: push for normal users, pull for celebrities (>10K followers) to avoid write amplification.",
-      "community": 2,
+      "community": 0,
       "norm_label": "fan-out on read vs write",
       "id": "claude_md_fanout_pattern"
     },
@@ -510,7 +501,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "WebSocket connections are stateful and server-local. Redis Pub/Sub bridges multiple server instances: on new comment, publish to channel comments:{videoId}; each server subscribes and pushes to its local WebSocket clients \u2014 key insight for real-time chat system interviews.",
-      "community": 2,
+      "community": 0,
       "norm_label": "redis pub/sub for cross-server comments",
       "id": "claude_md_redis_pubsub_comments"
     },
@@ -524,7 +515,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Sliding window counter implemented with Redis INCR + EXPIRE. Applied at 100 req/min per IP (general) and 10 uploads/hour per user. Returns HTTP 429 with Retry-After header. Chosen over token bucket for simplicity; trade-offs documented.",
-      "community": 2,
+      "community": 0,
       "norm_label": "sliding window rate limiting via redis",
       "id": "claude_md_rate_limiting"
     },
@@ -538,7 +529,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "All schema changes go in src/main/resources/db/migration/ as Flyway V{n}__{description}.sql files. Flyway runs automatically on startup, ensuring schema and code stay in sync across environments without manual intervention.",
-      "community": 2,
+      "community": 0,
       "norm_label": "flyway sql migrations convention",
       "id": "claude_md_flyway_migrations"
     },
@@ -552,7 +543,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Three stateless Spring Boot instances (app-1, app-2, app-3) run behind Nginx. Round-robin and least_conn strategies compared. Statelessness (no in-process session state) is required for horizontal scaling \u2014 any instance can serve any request.",
-      "community": 4,
+      "community": 0,
       "norm_label": "horizontal scaling \u2014 stateless api behind load balancer",
       "id": "claude_md_horizontal_scaling"
     },
@@ -566,7 +557,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Permanently failed video processing jobs and failed notifications are routed to a dead-letter Kafka topic. Consumer crash mid-processing restarts and replays from Kafka \u2014 demonstrates at-least-once delivery semantics and the need for idempotent consumers.",
-      "community": 2,
+      "community": 0,
       "norm_label": "dead-letter topic (dlq) for failed processing",
       "id": "claude_md_dead_letter_topic"
     },
@@ -575,7 +566,7 @@
       "file_type": "code",
       "source_file": "DataSourceConfig.java",
       "source_location": "L1",
-      "community": 5,
+      "community": 1,
       "norm_label": "datasourceconfig.java",
       "id": "datasourceconfig_java"
     },
@@ -584,7 +575,7 @@
       "file_type": "code",
       "source_file": "DataSourceConfig.java",
       "source_location": "L17",
-      "community": 5,
+      "community": 1,
       "norm_label": ".primaryproperties()",
       "id": "config_datasourceconfig_datasourceconfig_primaryproperties"
     },
@@ -593,7 +584,7 @@
       "file_type": "code",
       "source_file": "DataSourceConfig.java",
       "source_location": "L23",
-      "community": 5,
+      "community": 1,
       "norm_label": ".replicaproperties()",
       "id": "config_datasourceconfig_datasourceconfig_replicaproperties"
     },
@@ -602,7 +593,7 @@
       "file_type": "code",
       "source_file": "DataSourceConfig.java",
       "source_location": "L29",
-      "community": 5,
+      "community": 1,
       "norm_label": ".datasource()",
       "id": "config_datasourceconfig_datasourceconfig_datasource"
     },
@@ -611,7 +602,7 @@
       "file_type": "code",
       "source_file": "RoutingDataSource.java",
       "source_location": "L1",
-      "community": 9,
+      "community": 5,
       "norm_label": "routingdatasource.java",
       "id": "routingdatasource_java"
     },
@@ -620,7 +611,7 @@
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "community": 9,
+      "community": 5,
       "norm_label": "abstractroutingdatasource",
       "id": "abstractroutingdatasource"
     },
@@ -629,7 +620,7 @@
       "file_type": "code",
       "source_file": "RoutingDataSource.java",
       "source_location": "L8",
-      "community": 9,
+      "community": 5,
       "norm_label": ".determinecurrentlookupkey()",
       "id": "config_routingdatasource_routingdatasource_determinecurrentlookupkey"
     },
@@ -781,9 +772,9 @@
       "file_type": "code",
       "source_file": "service/VideoService.java",
       "source_location": "L1",
-      "id": "service_videoservice_java",
-      "community": 0,
-      "norm_label": "videoservice.java"
+      "community": 2,
+      "norm_label": "videoservice.java",
+      "id": "service_videoservice_java"
     },
     {
       "label": "compose.yaml (Docker Orchestration)",
@@ -794,9 +785,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "compose_yaml",
       "community": 3,
-      "norm_label": "compose.yaml (docker orchestration)"
+      "norm_label": "compose.yaml (docker orchestration)",
+      "id": "compose_yaml"
     },
     {
       "label": "Debug Port 5005 (JDWP)",
@@ -807,9 +798,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "compose_debug_port",
       "community": 3,
-      "norm_label": "debug port 5005 (jdwp)"
+      "norm_label": "debug port 5005 (jdwp)",
+      "id": "compose_debug_port"
     },
     {
       "label": "JAVA_TOOL_OPTIONS Debug Agent",
@@ -820,9 +811,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "compose_java_tool_options",
       "community": 3,
-      "norm_label": "java_tool_options debug agent"
+      "norm_label": "java_tool_options debug agent",
+      "id": "compose_java_tool_options"
     },
     {
       "label": "open-in-view: false",
@@ -833,9 +824,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "application_yaml_open_in_view",
       "community": 3,
-      "norm_label": "open-in-view: false"
+      "norm_label": "open-in-view: false",
+      "id": "application_yaml_open_in_view"
     },
     {
       "label": "application.yaml (Base Config)",
@@ -846,9 +837,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "application_yaml",
       "community": 3,
-      "norm_label": "application.yaml (base config)"
+      "norm_label": "application.yaml (base config)",
+      "id": "application_yaml"
     },
     {
       "label": "Day 4 Database Replication Completed",
@@ -859,9 +850,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_day4_replication",
       "community": 3,
-      "norm_label": "day 4 database replication completed"
+      "norm_label": "day 4 database replication completed",
+      "id": "claude_md_day4_replication"
     },
     {
       "label": "LazyConnectionDataSourceProxy Pattern",
@@ -872,9 +863,225 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_lazy_connection",
       "community": 3,
-      "norm_label": "lazyconnectiondatasourceproxy pattern"
+      "norm_label": "lazyconnectiondatasourceproxy pattern",
+      "id": "claude_md_lazy_connection"
+    },
+    {
+      "label": "EventSerializer.java",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
+      "source_location": "L1",
+      "id": "java_kavin_personal_project_streambase_config_eventserializer_java",
+      "community": 6,
+      "norm_label": "eventserializer.java"
+    },
+    {
+      "label": "EventSerializer",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
+      "source_location": "L7",
+      "id": "config_eventserializer_eventserializer",
+      "community": 6,
+      "norm_label": "eventserializer"
+    },
+    {
+      "label": ".serialize()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
+      "source_location": "L11",
+      "id": "config_eventserializer_eventserializer_serialize",
+      "community": 6,
+      "norm_label": ".serialize()"
+    },
+    {
+      "label": "ReplicaHealthMonitor",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/ReplicaHealthMonitor.java",
+      "source_location": "L12",
+      "id": "config_replicahealthmonitor_replicahealthmonitor",
+      "community": 5,
+      "norm_label": "replicahealthmonitor"
+    },
+    {
+      "label": ".checkReplica()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/ReplicaHealthMonitor.java",
+      "source_location": "L25",
+      "id": "config_replicahealthmonitor_replicahealthmonitor_checkreplica",
+      "community": 5,
+      "norm_label": ".checkreplica()"
+    },
+    {
+      "label": "KafkaConfig.java",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L1",
+      "id": "java_kavin_personal_project_streambase_config_kafkaconfig_java",
+      "community": 4,
+      "norm_label": "kafkaconfig.java"
+    },
+    {
+      "label": "KafkaConfig",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L20",
+      "id": "config_kafkaconfig_kafkaconfig",
+      "community": 4,
+      "norm_label": "kafkaconfig"
+    },
+    {
+      "label": ".producerFactory()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L26",
+      "id": "config_kafkaconfig_kafkaconfig_producerfactory",
+      "community": 4,
+      "norm_label": ".producerfactory()"
+    },
+    {
+      "label": ".kafkaTemplate()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L36",
+      "id": "config_kafkaconfig_kafkaconfig_kafkatemplate",
+      "community": 4,
+      "norm_label": ".kafkatemplate()"
+    },
+    {
+      "label": ".videoUploadedConsumerFactory()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L41",
+      "id": "config_kafkaconfig_kafkaconfig_videouploadedconsumerfactory",
+      "community": 4,
+      "norm_label": ".videouploadedconsumerfactory()"
+    },
+    {
+      "label": ".videoUploadedListenerContainerFactory()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L50",
+      "id": "config_kafkaconfig_kafkaconfig_videouploadedlistenercontainerfactory",
+      "community": 4,
+      "norm_label": ".videouploadedlistenercontainerfactory()"
+    },
+    {
+      "label": ".kafkaAdmin()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L58",
+      "id": "config_kafkaconfig_kafkaconfig_kafkaadmin",
+      "community": 4,
+      "norm_label": ".kafkaadmin()"
+    },
+    {
+      "label": ".videoUploadedTopic()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L66",
+      "id": "config_kafkaconfig_kafkaconfig_videouploadedtopic",
+      "community": 4,
+      "norm_label": ".videouploadedtopic()"
+    },
+    {
+      "label": ".videoUploadedDltTopic()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L75",
+      "id": "config_kafkaconfig_kafkaconfig_videouploadeddlttopic",
+      "community": 4,
+      "norm_label": ".videouploadeddlttopic()"
+    },
+    {
+      "label": ".getConnection()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
+      "source_location": "L27",
+      "id": "config_routingdatasource_routingdatasource_getconnection",
+      "community": 5,
+      "norm_label": ".getconnection()"
+    },
+    {
+      "label": ".isReplicaAvailable()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
+      "source_location": "L41",
+      "id": "config_routingdatasource_routingdatasource_isreplicaavailable",
+      "community": 5,
+      "norm_label": ".isreplicaavailable()"
+    },
+    {
+      "label": ".makeReplicaUp()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
+      "source_location": "L45",
+      "id": "config_routingdatasource_routingdatasource_makereplicaup",
+      "community": 5,
+      "norm_label": ".makereplicaup()"
+    },
+    {
+      "label": "EventDeserializer",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/EventDeserializer.java",
+      "source_location": "L6",
+      "id": "config_eventdeserializer_eventdeserializer",
+      "community": 6,
+      "norm_label": "eventdeserializer"
+    },
+    {
+      "label": ".deserialize()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/EventDeserializer.java",
+      "source_location": "L15",
+      "id": "config_eventdeserializer_eventdeserializer_deserialize",
+      "community": 6,
+      "norm_label": ".deserialize()"
+    },
+    {
+      "label": "VideoMapper.java",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/mapper/VideoMapper.java",
+      "source_location": "L1",
+      "id": "java_kavin_personal_project_streambase_mapper_videomapper_java",
+      "community": 2,
+      "norm_label": "videomapper.java"
+    },
+    {
+      "label": "VideoProcesscor",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
+      "source_location": "L12",
+      "id": "consumer_videoprocesscor_videoprocesscor",
+      "community": 10,
+      "norm_label": "videoprocesscor"
+    },
+    {
+      "label": ".process()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
+      "source_location": "L20",
+      "id": "consumer_videoprocesscor_videoprocesscor_process",
+      "community": 10,
+      "norm_label": ".process()"
+    },
+    {
+      "label": ".updateStatus()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
+      "source_location": "L39",
+      "id": "consumer_videoprocesscor_videoprocesscor_updatestatus",
+      "community": 10,
+      "norm_label": ".updatestatus()"
+    },
+    {
+      "label": "VideoUploadedEvent.java",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/event/VideoUploadedEvent.java",
+      "source_location": "L1",
+      "id": "java_kavin_personal_project_streambase_event_videouploadedevent_java",
+      "community": 18,
+      "norm_label": "videouploadedevent.java"
     }
   ],
   "links": [
@@ -891,8 +1098,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/kavin/personal_project/streambase/StreambaseApplication.java",
-      "source_location": "L11",
+      "source_file": "java/kavin/personal_project/streambase/StreambaseApplication.java",
+      "source_location": "L15",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "streambase_streambaseapplication_streambaseapplication",
@@ -941,8 +1148,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/kavin/personal_project/streambase/entity/VideoEntity.java",
-      "source_location": "L37",
+      "source_file": "java/kavin/personal_project/streambase/entity/VideoEntity.java",
+      "source_location": "L41",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "entity_videoentity_videoentity",
@@ -951,17 +1158,17 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
+      "source_file": "java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_main_java_kavin_personal_project_streambase_mapper_videomapper_java",
+      "source": "java_kavin_personal_project_streambase_mapper_videomapper_java",
       "target": "mapper_videomapper_videomapper"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
+      "source_file": "java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -971,7 +1178,7 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
+      "source_file": "java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L20",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -981,8 +1188,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
-      "source_location": "L24",
+      "source_file": "java/kavin/personal_project/streambase/mapper/VideoMapper.java",
+      "source_location": "L25",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "mapper_videomapper_videomapper",
@@ -993,8 +1200,8 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
-      "source_location": "L35",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L41",
       "weight": 1.0,
       "source": "service_videoservice_videoservice_getvideo",
       "target": "mapper_videomapper_videomapper_todto"
@@ -1004,8 +1211,8 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
-      "source_location": "L43",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L52",
       "weight": 1.0,
       "source": "service_videoservice_videoservice_createvideo",
       "target": "mapper_videomapper_videomapper_todto"
@@ -1015,8 +1222,8 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
-      "source_location": "L53",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L63",
       "weight": 1.0,
       "source": "service_videoservice_videoservice_updatevideo",
       "target": "mapper_videomapper_videomapper_todto"
@@ -1026,8 +1233,8 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
-      "source_location": "L40",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L47",
       "weight": 1.0,
       "source": "service_videoservice_videoservice_createvideo",
       "target": "mapper_videomapper_videomapper_toentity"
@@ -1037,8 +1244,8 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
-      "source_location": "L50",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L60",
       "weight": 1.0,
       "source": "service_videoservice_videoservice_updatevideo",
       "target": "mapper_videomapper_videomapper_updateentity"
@@ -1116,8 +1323,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "service/VideoService.java",
-      "source_location": "L27",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L30",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "service_videoservice_java",
@@ -1126,8 +1333,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "service/VideoService.java",
-      "source_location": "L33",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L36",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "service_videoservice_java",
@@ -1136,8 +1343,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "service/VideoService.java",
-      "source_location": "L41",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L44",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "service_videoservice_java",
@@ -1146,8 +1353,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "service/VideoService.java",
-      "source_location": "L50",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L55",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "service_videoservice_java",
@@ -1156,8 +1363,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "service/VideoService.java",
-      "source_location": "L61",
+      "source_file": "java/kavin/personal_project/streambase/service/VideoService.java",
+      "source_location": "L66",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "service_videoservice_java",
@@ -1576,8 +1783,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "config/DataSourceConfig.java",
-      "source_location": "L18",
+      "source_file": "java/kavin/personal_project/streambase/config/DataSourceConfig.java",
+      "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "datasourceconfig_java",
@@ -1586,8 +1793,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "config/DataSourceConfig.java",
-      "source_location": "L24",
+      "source_file": "java/kavin/personal_project/streambase/config/DataSourceConfig.java",
+      "source_location": "L25",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "datasourceconfig_java",
@@ -1596,19 +1803,49 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "config/DataSourceConfig.java",
-      "source_location": "L30",
+      "source_file": "java/kavin/personal_project/streambase/config/DataSourceConfig.java",
+      "source_location": "L64",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "datasourceconfig_java",
       "target": "config_datasourceconfig_datasourceconfig_datasource"
     },
     {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/DataSourceConfig.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "datasourceconfig_java",
+      "target": "spring_datasource_primary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/DataSourceConfig.java",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "datasourceconfig_java",
+      "target": "spring_datasource_replica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/DataSourceConfig.java",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "datasourceconfig_java",
+      "target": "routingdatasource_java",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "extends",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "config/RoutingDataSource.java",
-      "source_location": "L7",
+      "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
+      "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "routingdatasource_java",
@@ -1617,12 +1854,42 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "config/RoutingDataSource.java",
-      "source_location": "L10",
+      "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
+      "source_location": "L20",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "routingdatasource_java",
       "target": "config_routingdatasource_routingdatasource_determinecurrentlookupkey"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "routingdatasource_java",
+      "target": "config_routingdatasource_routingdatasource_getconnection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "routingdatasource_java",
+      "target": "config_routingdatasource_routingdatasource_isreplicaavailable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "routingdatasource_java",
+      "target": "config_routingdatasource_routingdatasource_makereplicaup",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -1803,8 +2070,224 @@
       "weight": 1.0,
       "source": "claude_md_day4_replication",
       "target": "claude_md_lazy_connection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "java_kavin_personal_project_streambase_config_eventserializer_java",
+      "target": "config_eventserializer_eventserializer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/EventDeserializer.java",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "java_kavin_personal_project_streambase_config_eventserializer_java",
+      "target": "config_eventdeserializer_eventdeserializer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "config_eventserializer_eventserializer",
+      "target": "config_eventserializer_eventserializer_serialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/ReplicaHealthMonitor.java",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "config_replicahealthmonitor_replicahealthmonitor",
+      "target": "config_replicahealthmonitor_replicahealthmonitor_checkreplica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "java/kavin/personal_project/streambase/config/ReplicaHealthMonitor.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "config_replicahealthmonitor_replicahealthmonitor_checkreplica",
+      "target": "config_routingdatasource_routingdatasource_isreplicaavailable"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "java/kavin/personal_project/streambase/config/ReplicaHealthMonitor.java",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "config_replicahealthmonitor_replicahealthmonitor_checkreplica",
+      "target": "config_routingdatasource_routingdatasource_getconnection"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "java/kavin/personal_project/streambase/config/ReplicaHealthMonitor.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "config_replicahealthmonitor_replicahealthmonitor_checkreplica",
+      "target": "config_routingdatasource_routingdatasource_makereplicaup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "java_kavin_personal_project_streambase_config_kafkaconfig_java",
+      "target": "config_kafkaconfig_kafkaconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "config_kafkaconfig_kafkaconfig",
+      "target": "config_kafkaconfig_kafkaconfig_producerfactory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "config_kafkaconfig_kafkaconfig",
+      "target": "config_kafkaconfig_kafkaconfig_kafkatemplate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "config_kafkaconfig_kafkaconfig",
+      "target": "config_kafkaconfig_kafkaconfig_videouploadedconsumerfactory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "config_kafkaconfig_kafkaconfig",
+      "target": "config_kafkaconfig_kafkaconfig_videouploadedlistenercontainerfactory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "config_kafkaconfig_kafkaconfig",
+      "target": "config_kafkaconfig_kafkaconfig_kafkaadmin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "config_kafkaconfig_kafkaconfig",
+      "target": "config_kafkaconfig_kafkaconfig_videouploadedtopic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "config_kafkaconfig_kafkaconfig",
+      "target": "config_kafkaconfig_kafkaconfig_videouploadeddlttopic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "config_kafkaconfig_kafkaconfig_kafkatemplate",
+      "target": "config_kafkaconfig_kafkaconfig_producerfactory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "config_kafkaconfig_kafkaconfig_videouploadedlistenercontainerfactory",
+      "target": "config_kafkaconfig_kafkaconfig_videouploadedconsumerfactory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/EventDeserializer.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "config_eventdeserializer_eventdeserializer",
+      "target": "config_eventdeserializer_eventdeserializer_deserialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "consumer_videoprocesscor_videoprocesscor",
+      "target": "consumer_videoprocesscor_videoprocesscor_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "consumer_videoprocesscor_videoprocesscor",
+      "target": "consumer_videoprocesscor_videoprocesscor_updatestatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "consumer_videoprocesscor_videoprocesscor_process",
+      "target": "consumer_videoprocesscor_videoprocesscor_updatestatus",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5491ab02841f75118af2daaa9b2e6e488eb28ff5"
+  "built_at_commit": "70e6ba4fc269e7c8f056e7c6b8a5e613d62a075a"
 }

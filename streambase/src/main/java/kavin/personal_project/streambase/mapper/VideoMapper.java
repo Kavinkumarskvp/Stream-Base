@@ -19,11 +19,13 @@ public interface VideoMapper {
 
     @Mapping(target = "title", source = "name")
     @Mapping(target = "uploadedBy", source = "author")
+    @Mapping(target = "status", ignore = true)
     VideoEntity toEntity(CreateVideoRequest request);
 
     @Mapping(target = "title", source = "name")
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "uploadedBy", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "status", ignore = true)
     void updateEntity(UpdateVideoRequest request, @MappingTarget VideoEntity entity);
 }
