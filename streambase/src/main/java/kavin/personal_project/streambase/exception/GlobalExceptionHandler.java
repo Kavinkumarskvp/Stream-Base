@@ -1,9 +1,11 @@
 package kavin.personal_project.streambase.exception;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.client.HttpClientErrorException;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,5 +25,15 @@ public class GlobalExceptionHandler {
                 .forEach(error -> errors.put(error.getField(),
                         error.getDefaultMessage()));
         return ResponseEntity.badRequest().body(errors);
+    }
+
+    @ExceptionHandler(LinkNotFoundException.class)
+    public ResponseEntity<Void> handleLinkNotFound() {
+        return ResponseEntity.notFound().build();
+    }
+
+    @ExceptionHandler(LinkExpiredException.class)
+    public ResponseEntity<Void> handleLinkExpired() {
+        return ResponseEntity.status(HttpStatus.GONE).build();
     }
 }

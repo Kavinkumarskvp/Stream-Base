@@ -88,7 +88,7 @@ design concepts. Every feature you build maps directly to a real interview quest
 ## My Current Progress
 
 ### 🔄 In Progress
-- [ ] **DAY 6, Task 1** — Write requirements: short link for any video, redirect on access, track click count
+- [ ] **DAY 8, Task 1** — Create a `RateLimiterFilter` (Spring `HandlerInterceptor`)
 
 ---
 
@@ -183,13 +183,13 @@ instantly. You understand Kafka topics, consumer groups, DLQ, and replay.
 ### DAY 6 — Shareable Short Links — Design
 **Theme:** System Design Process
 
-- [ ] 1. Write requirements: short link for any video, redirect on access, track click count
-- [ ] 2. Estimate scale: 100K links/day, 10:1 read/write ratio, 5-year retention
-- [ ] 3. Calculate storage: ~500M links x 100 bytes = ~50GB
-- [ ] 4. Design the API: `POST /api/links` (returns short code), `GET /s/{code}` (redirects)
-- [ ] 5. Choose encoding: base62 on auto-increment ID (write the trade-off vs MD5)
-- [ ] 6. Design the DB schema: `links(id, code, video_id, click_count, created_at)`
-- [ ] 7. Plan: cache hot links in Redis for fast redirect
+- [x] 1. Write requirements: short link for any video, redirect on access, track click count
+- [x] 2. Estimate scale: 100K links/day, 10:1 read/write ratio, 5-year retention
+- [x] 3. Calculate storage: ~500M links x 100 bytes = ~50GB
+- [x] 4. Design the API: `POST /api/links` (returns short code), `GET /s/{code}` (redirects)
+- [x] 5. Choose encoding: base62 on auto-increment ID (write the trade-off vs MD5)
+- [x] 6. Design the DB schema: `links(id, code, video_id, click_count, created_at)`
+- [x] 7. Plan: cache hot links in Redis for fast redirect
 
 **✅ Day 6 Outcome:** A complete design document for the short-link feature.
 This IS your interview answer for "Design TinyURL".
@@ -199,11 +199,11 @@ This IS your interview answer for "Design TinyURL".
 ### DAY 7 — Shareable Short Links — Build
 **Theme:** URL Shortening + Caching
 
-- [ ] 1. Create `Link` entity and `LinkController` (`POST` + `GET` endpoints)
-- [ ] 2. Implement base62 encoding on auto-increment ID
-- [ ] 3. Add redirect: `GET /s/{code}` returns HTTP 302 with video URL
-- [ ] 4. Increment `click_count` atomically on each redirect
-- [ ] 5. Cache hot links in Redis (top 20% by click count)
+- [x] 1. Create `Link` entity and `LinkController` (`POST` + `GET` endpoints)
+- [x] 2. Implement base62 encoding on auto-increment ID
+- [x] 3. Add redirect: `GET /s/{code}` returns HTTP 302 with video URL
+- [x] 4. Increment `click_count` atomically on each redirect (Redis counter + scheduled flush, Bitly-style)
+- [x] 5. Cache hot links in Redis (manual cache with TTL = link expiry)
 - [ ] 6. Load-test: generate 1000 links, hit random ones 10K times, measure latency
 
 **✅ Day 7 Outcome:** StreamBase has shareable short links with click tracking.

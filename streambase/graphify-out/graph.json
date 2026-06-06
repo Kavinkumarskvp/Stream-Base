@@ -8,7 +8,7 @@
       "file_type": "code",
       "source_file": "src/test/java/kavin/personal_project/streambase/StreambaseApplicationTests.java",
       "source_location": "L9",
-      "community": 7,
+      "community": 10,
       "norm_label": ".contextloads()",
       "id": "streambase_streambaseapplicationtests_streambaseapplicationtests_contextloads"
     },
@@ -17,7 +17,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/StreambaseApplication.java",
       "source_location": "L7",
-      "community": 7,
+      "community": 10,
       "norm_label": "streambaseapplication",
       "id": "streambase_streambaseapplication_streambaseapplication"
     },
@@ -26,7 +26,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/StreambaseApplication.java",
       "source_location": "L11",
-      "community": 7,
+      "community": 10,
       "norm_label": ".main()",
       "id": "streambase_streambaseapplication_streambaseapplication_main"
     },
@@ -35,7 +35,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/UpdateVideoRequest.java",
       "source_location": "L1",
-      "community": 11,
+      "community": 14,
       "norm_label": "updatevideorequest.java",
       "id": "src_main_java_kavin_personal_project_streambase_dto_updatevideorequest_java"
     },
@@ -44,7 +44,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/UpdateVideoRequest.java",
       "source_location": "L7",
-      "community": 11,
+      "community": 14,
       "norm_label": "updatevideorequest",
       "id": "dto_updatevideorequest_updatevideorequest"
     },
@@ -53,7 +53,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/CreateVideoRequest.java",
       "source_location": "L7",
-      "community": 16,
+      "community": 18,
       "norm_label": "createvideorequest",
       "id": "dto_createvideorequest_createvideorequest"
     },
@@ -62,7 +62,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/VideoDto.java",
       "source_location": "L8",
-      "community": 17,
+      "community": 19,
       "norm_label": "videodto",
       "id": "dto_videodto_videodto"
     },
@@ -71,7 +71,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/repository/VideoRepository.java",
       "source_location": "L1",
-      "community": 12,
+      "community": 15,
       "norm_label": "videorepository.java",
       "id": "src_main_java_kavin_personal_project_streambase_repository_videorepository_java"
     },
@@ -80,7 +80,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/repository/VideoRepository.java",
       "source_location": "L6",
-      "community": 12,
+      "community": 15,
       "norm_label": "videorepository",
       "id": "repository_videorepository_videorepository"
     },
@@ -89,7 +89,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/config/RedisConfig.java",
       "source_location": "L1",
-      "community": 8,
+      "community": 11,
       "norm_label": "redisconfig.java",
       "id": "src_main_java_kavin_personal_project_streambase_config_redisconfig_java"
     },
@@ -98,7 +98,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/config/RedisConfig.java",
       "source_location": "L17",
-      "community": 8,
+      "community": 11,
       "norm_label": "redisconfig",
       "id": "config_redisconfig_redisconfig"
     },
@@ -107,7 +107,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/config/RedisConfig.java",
       "source_location": "L20",
-      "community": 8,
+      "community": 11,
       "norm_label": ".cachemanager()",
       "id": "config_redisconfig_redisconfig_cachemanager"
     },
@@ -121,20 +121,11 @@
       "id": "entity_videoentity_videoentity"
     },
     {
-      "label": ".onCreate()",
-      "file_type": "code",
-      "source_file": "src/main/java/kavin/personal_project/streambase/entity/VideoEntity.java",
-      "source_location": "L37",
-      "community": 13,
-      "norm_label": ".oncreate()",
-      "id": "entity_videoentity_videoentity_oncreate"
-    },
-    {
       "label": "VideoMapper",
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L11",
-      "community": 2,
+      "community": 1,
       "norm_label": "videomapper",
       "id": "mapper_videomapper_videomapper"
     },
@@ -143,7 +134,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L14",
-      "community": 2,
+      "community": 1,
       "norm_label": ".todto()",
       "id": "mapper_videomapper_videomapper_todto"
     },
@@ -152,7 +143,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L20",
-      "community": 2,
+      "community": 1,
       "norm_label": ".toentity()",
       "id": "mapper_videomapper_videomapper_toentity"
     },
@@ -161,7 +152,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L24",
-      "community": 2,
+      "community": 1,
       "norm_label": ".updateentity()",
       "id": "mapper_videomapper_videomapper_updateentity"
     },
@@ -170,7 +161,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/HealthController.java",
       "source_location": "L7",
-      "community": 14,
+      "community": 16,
       "norm_label": "healthcontroller",
       "id": "controller_healthcontroller_healthcontroller"
     },
@@ -179,7 +170,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/HealthController.java",
       "source_location": "L10",
-      "community": 14,
+      "community": 16,
       "norm_label": ".health()",
       "id": "controller_healthcontroller_healthcontroller_health"
     },
@@ -188,7 +179,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/VideoController.java",
       "source_location": "L1",
-      "community": 2,
+      "community": 1,
       "norm_label": "videocontroller.java",
       "id": "src_main_java_kavin_personal_project_streambase_controller_videocontroller_java"
     },
@@ -197,7 +188,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/VideoController.java",
       "source_location": "L17",
-      "community": 2,
+      "community": 1,
       "norm_label": "videocontroller",
       "id": "controller_videocontroller_videocontroller"
     },
@@ -206,7 +197,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L26",
-      "community": 2,
+      "community": 1,
       "norm_label": ".getallvideos()",
       "id": "service_videoservice_videoservice_getallvideos"
     },
@@ -215,7 +206,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L31",
-      "community": 2,
+      "community": 1,
       "norm_label": ".getvideo()",
       "id": "service_videoservice_videoservice_getvideo"
     },
@@ -224,7 +215,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L38",
-      "community": 2,
+      "community": 1,
       "norm_label": ".createvideo()",
       "id": "service_videoservice_videoservice_createvideo"
     },
@@ -233,7 +224,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L46",
-      "community": 2,
+      "community": 1,
       "norm_label": ".updatevideo()",
       "id": "service_videoservice_videoservice_updatevideo"
     },
@@ -242,7 +233,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L56",
-      "community": 2,
+      "community": 1,
       "norm_label": ".deletevideo()",
       "id": "service_videoservice_videoservice_deletevideo"
     },
@@ -251,7 +242,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/exception/VideoNotFoundException.java",
       "source_location": "L3",
-      "community": 15,
+      "community": 9,
       "norm_label": "videonotfoundexception",
       "id": "exception_videonotfoundexception_videonotfoundexception"
     },
@@ -260,7 +251,7 @@
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "community": 15,
+      "community": 9,
       "norm_label": "runtimeexception",
       "id": "runtimeexception"
     },
@@ -269,7 +260,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L11",
-      "community": 9,
+      "community": 7,
       "norm_label": "globalexceptionhandler",
       "id": "exception_globalexceptionhandler_globalexceptionhandler"
     },
@@ -278,7 +269,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L14",
-      "community": 9,
+      "community": 7,
       "norm_label": ".handlevideonotfound()",
       "id": "exception_globalexceptionhandler_globalexceptionhandler_handlevideonotfound"
     },
@@ -287,7 +278,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L19",
-      "community": 9,
+      "community": 7,
       "norm_label": ".handleinvalidparam()",
       "id": "exception_globalexceptionhandler_globalexceptionhandler_handleinvalidparam"
     },
@@ -566,7 +557,7 @@
       "file_type": "code",
       "source_file": "DataSourceConfig.java",
       "source_location": "L1",
-      "community": 1,
+      "community": 2,
       "norm_label": "datasourceconfig.java",
       "id": "datasourceconfig_java"
     },
@@ -575,7 +566,7 @@
       "file_type": "code",
       "source_file": "DataSourceConfig.java",
       "source_location": "L17",
-      "community": 1,
+      "community": 2,
       "norm_label": ".primaryproperties()",
       "id": "config_datasourceconfig_datasourceconfig_primaryproperties"
     },
@@ -584,7 +575,7 @@
       "file_type": "code",
       "source_file": "DataSourceConfig.java",
       "source_location": "L23",
-      "community": 1,
+      "community": 2,
       "norm_label": ".replicaproperties()",
       "id": "config_datasourceconfig_datasourceconfig_replicaproperties"
     },
@@ -593,7 +584,7 @@
       "file_type": "code",
       "source_file": "DataSourceConfig.java",
       "source_location": "L29",
-      "community": 1,
+      "community": 2,
       "norm_label": ".datasource()",
       "id": "config_datasourceconfig_datasourceconfig_datasource"
     },
@@ -633,7 +624,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "application-dev.yaml",
       "id": "application_dev_yaml"
     },
@@ -646,7 +637,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "primary datasource",
       "id": "spring_datasource_primary"
     },
@@ -659,7 +650,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "replica datasource",
       "id": "spring_datasource_replica"
     },
@@ -672,7 +663,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "redis configuration",
       "id": "redis_config"
     },
@@ -685,7 +676,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "db_url environment variable",
       "id": "db_url_env"
     },
@@ -698,7 +689,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "db_replica_url environment variable",
       "id": "db_replica_url_env"
     },
@@ -711,7 +702,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "db_username environment variable",
       "id": "db_username_env"
     },
@@ -724,7 +715,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "db_password environment variable",
       "id": "db_password_env"
     },
@@ -737,7 +728,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "redis_host environment variable",
       "id": "redis_host_env"
     },
@@ -750,7 +741,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "redis_port environment variable",
       "id": "redis_port_env"
     },
@@ -763,7 +754,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "read replica pattern",
       "id": "read_replica_pattern"
     },
@@ -772,7 +763,7 @@
       "file_type": "code",
       "source_file": "service/VideoService.java",
       "source_location": "L1",
-      "community": 2,
+      "community": 1,
       "norm_label": "videoservice.java",
       "id": "service_videoservice_java"
     },
@@ -872,216 +863,405 @@
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
       "source_location": "L1",
-      "id": "java_kavin_personal_project_streambase_config_eventserializer_java",
-      "community": 6,
-      "norm_label": "eventserializer.java"
+      "community": 8,
+      "norm_label": "eventserializer.java",
+      "id": "java_kavin_personal_project_streambase_config_eventserializer_java"
     },
     {
       "label": "EventSerializer",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
       "source_location": "L7",
-      "id": "config_eventserializer_eventserializer",
-      "community": 6,
-      "norm_label": "eventserializer"
+      "community": 8,
+      "norm_label": "eventserializer",
+      "id": "config_eventserializer_eventserializer"
     },
     {
       "label": ".serialize()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
       "source_location": "L11",
-      "id": "config_eventserializer_eventserializer_serialize",
-      "community": 6,
-      "norm_label": ".serialize()"
+      "community": 8,
+      "norm_label": ".serialize()",
+      "id": "config_eventserializer_eventserializer_serialize"
     },
     {
       "label": "ReplicaHealthMonitor",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/ReplicaHealthMonitor.java",
       "source_location": "L12",
-      "id": "config_replicahealthmonitor_replicahealthmonitor",
       "community": 5,
-      "norm_label": "replicahealthmonitor"
+      "norm_label": "replicahealthmonitor",
+      "id": "config_replicahealthmonitor_replicahealthmonitor"
     },
     {
       "label": ".checkReplica()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/ReplicaHealthMonitor.java",
       "source_location": "L25",
-      "id": "config_replicahealthmonitor_replicahealthmonitor_checkreplica",
       "community": 5,
-      "norm_label": ".checkreplica()"
+      "norm_label": ".checkreplica()",
+      "id": "config_replicahealthmonitor_replicahealthmonitor_checkreplica"
     },
     {
       "label": "KafkaConfig.java",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L1",
-      "id": "java_kavin_personal_project_streambase_config_kafkaconfig_java",
       "community": 4,
-      "norm_label": "kafkaconfig.java"
+      "norm_label": "kafkaconfig.java",
+      "id": "java_kavin_personal_project_streambase_config_kafkaconfig_java"
     },
     {
       "label": "KafkaConfig",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L20",
-      "id": "config_kafkaconfig_kafkaconfig",
       "community": 4,
-      "norm_label": "kafkaconfig"
+      "norm_label": "kafkaconfig",
+      "id": "config_kafkaconfig_kafkaconfig"
     },
     {
       "label": ".producerFactory()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L26",
-      "id": "config_kafkaconfig_kafkaconfig_producerfactory",
       "community": 4,
-      "norm_label": ".producerfactory()"
+      "norm_label": ".producerfactory()",
+      "id": "config_kafkaconfig_kafkaconfig_producerfactory"
     },
     {
       "label": ".kafkaTemplate()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L36",
-      "id": "config_kafkaconfig_kafkaconfig_kafkatemplate",
       "community": 4,
-      "norm_label": ".kafkatemplate()"
+      "norm_label": ".kafkatemplate()",
+      "id": "config_kafkaconfig_kafkaconfig_kafkatemplate"
     },
     {
       "label": ".videoUploadedConsumerFactory()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L41",
-      "id": "config_kafkaconfig_kafkaconfig_videouploadedconsumerfactory",
       "community": 4,
-      "norm_label": ".videouploadedconsumerfactory()"
+      "norm_label": ".videouploadedconsumerfactory()",
+      "id": "config_kafkaconfig_kafkaconfig_videouploadedconsumerfactory"
     },
     {
       "label": ".videoUploadedListenerContainerFactory()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L50",
-      "id": "config_kafkaconfig_kafkaconfig_videouploadedlistenercontainerfactory",
       "community": 4,
-      "norm_label": ".videouploadedlistenercontainerfactory()"
+      "norm_label": ".videouploadedlistenercontainerfactory()",
+      "id": "config_kafkaconfig_kafkaconfig_videouploadedlistenercontainerfactory"
     },
     {
       "label": ".kafkaAdmin()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L58",
-      "id": "config_kafkaconfig_kafkaconfig_kafkaadmin",
       "community": 4,
-      "norm_label": ".kafkaadmin()"
+      "norm_label": ".kafkaadmin()",
+      "id": "config_kafkaconfig_kafkaconfig_kafkaadmin"
     },
     {
       "label": ".videoUploadedTopic()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L66",
-      "id": "config_kafkaconfig_kafkaconfig_videouploadedtopic",
       "community": 4,
-      "norm_label": ".videouploadedtopic()"
+      "norm_label": ".videouploadedtopic()",
+      "id": "config_kafkaconfig_kafkaconfig_videouploadedtopic"
     },
     {
       "label": ".videoUploadedDltTopic()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L75",
-      "id": "config_kafkaconfig_kafkaconfig_videouploadeddlttopic",
       "community": 4,
-      "norm_label": ".videouploadeddlttopic()"
+      "norm_label": ".videouploadeddlttopic()",
+      "id": "config_kafkaconfig_kafkaconfig_videouploadeddlttopic"
     },
     {
       "label": ".getConnection()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
       "source_location": "L27",
-      "id": "config_routingdatasource_routingdatasource_getconnection",
       "community": 5,
-      "norm_label": ".getconnection()"
+      "norm_label": ".getconnection()",
+      "id": "config_routingdatasource_routingdatasource_getconnection"
     },
     {
       "label": ".isReplicaAvailable()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
       "source_location": "L41",
-      "id": "config_routingdatasource_routingdatasource_isreplicaavailable",
       "community": 5,
-      "norm_label": ".isreplicaavailable()"
+      "norm_label": ".isreplicaavailable()",
+      "id": "config_routingdatasource_routingdatasource_isreplicaavailable"
     },
     {
       "label": ".makeReplicaUp()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
       "source_location": "L45",
-      "id": "config_routingdatasource_routingdatasource_makereplicaup",
       "community": 5,
-      "norm_label": ".makereplicaup()"
+      "norm_label": ".makereplicaup()",
+      "id": "config_routingdatasource_routingdatasource_makereplicaup"
     },
     {
       "label": "EventDeserializer",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/EventDeserializer.java",
       "source_location": "L6",
-      "id": "config_eventdeserializer_eventdeserializer",
-      "community": 6,
-      "norm_label": "eventdeserializer"
+      "community": 8,
+      "norm_label": "eventdeserializer",
+      "id": "config_eventdeserializer_eventdeserializer"
     },
     {
       "label": ".deserialize()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/config/EventDeserializer.java",
       "source_location": "L15",
-      "id": "config_eventdeserializer_eventdeserializer_deserialize",
-      "community": 6,
-      "norm_label": ".deserialize()"
+      "community": 8,
+      "norm_label": ".deserialize()",
+      "id": "config_eventdeserializer_eventdeserializer_deserialize"
     },
     {
       "label": "VideoMapper.java",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L1",
-      "id": "java_kavin_personal_project_streambase_mapper_videomapper_java",
-      "community": 2,
-      "norm_label": "videomapper.java"
+      "community": 1,
+      "norm_label": "videomapper.java",
+      "id": "java_kavin_personal_project_streambase_mapper_videomapper_java"
     },
     {
       "label": "VideoProcesscor",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
       "source_location": "L12",
-      "id": "consumer_videoprocesscor_videoprocesscor",
-      "community": 10,
-      "norm_label": "videoprocesscor"
+      "community": 12,
+      "norm_label": "videoprocesscor",
+      "id": "consumer_videoprocesscor_videoprocesscor"
     },
     {
       "label": ".process()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
       "source_location": "L20",
-      "id": "consumer_videoprocesscor_videoprocesscor_process",
-      "community": 10,
-      "norm_label": ".process()"
+      "community": 12,
+      "norm_label": ".process()",
+      "id": "consumer_videoprocesscor_videoprocesscor_process"
     },
     {
       "label": ".updateStatus()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
       "source_location": "L39",
-      "id": "consumer_videoprocesscor_videoprocesscor_updatestatus",
-      "community": 10,
-      "norm_label": ".updatestatus()"
+      "community": 12,
+      "norm_label": ".updatestatus()",
+      "id": "consumer_videoprocesscor_videoprocesscor_updatestatus"
     },
     {
       "label": "VideoUploadedEvent.java",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/event/VideoUploadedEvent.java",
       "source_location": "L1",
-      "id": "java_kavin_personal_project_streambase_event_videouploadedevent_java",
-      "community": 18,
-      "norm_label": "videouploadedevent.java"
+      "community": 20,
+      "norm_label": "videouploadedevent.java",
+      "id": "java_kavin_personal_project_streambase_event_videouploadedevent_java"
+    },
+    {
+      "label": "CreateLinkRequest",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/dto/CreateLinkRequest.java",
+      "source_location": "L5",
+      "id": "dto_createlinkrequest_createlinkrequest",
+      "community": 21,
+      "norm_label": "createlinkrequest"
+    },
+    {
+      "label": "LinkDto.java",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/dto/LinkDto.java",
+      "source_location": "L1",
+      "id": "java_kavin_personal_project_streambase_dto_linkdto_java",
+      "community": 17,
+      "norm_label": "linkdto.java"
+    },
+    {
+      "label": "LinkDto",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/dto/LinkDto.java",
+      "source_location": "L8",
+      "id": "dto_linkdto_linkdto",
+      "community": 17,
+      "norm_label": "linkdto"
+    },
+    {
+      "label": "LinkRepository.java",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
+      "source_location": "L1",
+      "id": "java_kavin_personal_project_streambase_repository_linkrepository_java",
+      "community": 6,
+      "norm_label": "linkrepository.java"
+    },
+    {
+      "label": "LinkRepository",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
+      "source_location": "L11",
+      "id": "repository_linkrepository_linkrepository",
+      "community": 6,
+      "norm_label": "linkrepository"
+    },
+    {
+      "label": ".findByCode()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
+      "source_location": "L12",
+      "id": "repository_linkrepository_linkrepository_findbycode",
+      "community": 6,
+      "norm_label": ".findbycode()"
+    },
+    {
+      "label": ".incrementClickCount()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
+      "source_location": "L14",
+      "id": "repository_linkrepository_linkrepository_incrementclickcount",
+      "community": 6,
+      "norm_label": ".incrementclickcount()"
+    },
+    {
+      "label": "LinkEntity",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/entity/LinkEntity.java",
+      "source_location": "L9",
+      "id": "entity_linkentity_linkentity",
+      "community": 13,
+      "norm_label": "linkentity"
+    },
+    {
+      "label": ".onCreate()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/entity/LinkEntity.java",
+      "source_location": "L41",
+      "id": "entity_linkentity_linkentity_oncreate",
+      "community": 13,
+      "norm_label": ".oncreate()"
+    },
+    {
+      "label": "LinkController.java",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
+      "source_location": "L1",
+      "id": "java_kavin_personal_project_streambase_controller_linkcontroller_java",
+      "community": 6,
+      "norm_label": "linkcontroller.java"
+    },
+    {
+      "label": "LinkController",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
+      "source_location": "L13",
+      "id": "controller_linkcontroller_linkcontroller",
+      "community": 6,
+      "norm_label": "linkcontroller"
+    },
+    {
+      "label": "LinkService.java",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L1",
+      "id": "java_kavin_personal_project_streambase_service_linkservice_java",
+      "community": 1,
+      "norm_label": "linkservice.java"
+    },
+    {
+      "label": "LinkService",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L22",
+      "id": "service_linkservice_linkservice",
+      "community": 1,
+      "norm_label": "linkservice"
+    },
+    {
+      "label": ".createLink()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L33",
+      "id": "service_linkservice_linkservice_createlink",
+      "community": 1,
+      "norm_label": ".createlink()"
+    },
+    {
+      "label": ".toBase62()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L61",
+      "id": "service_linkservice_linkservice_tobase62",
+      "community": 1,
+      "norm_label": ".tobase62()"
+    },
+    {
+      "label": ".redirect()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L81",
+      "id": "service_linkservice_linkservice_redirect",
+      "community": 6,
+      "norm_label": ".redirect()"
+    },
+    {
+      "label": ".flushClickCounts()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L103",
+      "id": "service_linkservice_linkservice_flushclickcounts",
+      "community": 6,
+      "norm_label": ".flushclickcounts()"
+    },
+    {
+      "label": "LinkExpiredException",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/exception/LinkExpiredException.java",
+      "source_location": "L3",
+      "id": "exception_linkexpiredexception_linkexpiredexception",
+      "community": 9,
+      "norm_label": "linkexpiredexception"
+    },
+    {
+      "label": "LinkNotFoundException",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/exception/LinkNotFoundException.java",
+      "source_location": "L3",
+      "id": "exception_linknotfoundexception_linknotfoundexception",
+      "community": 9,
+      "norm_label": "linknotfoundexception"
+    },
+    {
+      "label": ".handleLinkNotFound()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
+      "source_location": "L30",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handlelinknotfound",
+      "community": 7,
+      "norm_label": ".handlelinknotfound()"
+    },
+    {
+      "label": ".handleLinkExpired()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
+      "source_location": "L35",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handlelinkexpired",
+      "community": 7,
+      "norm_label": ".handlelinkexpired()"
     }
   ],
   "links": [
@@ -1153,7 +1333,7 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "entity_videoentity_videoentity",
-      "target": "entity_videoentity_videoentity_oncreate"
+      "target": "entity_linkentity_linkentity_oncreate"
     },
     {
       "relation": "contains",
@@ -1227,6 +1407,27 @@
       "weight": 1.0,
       "source": "service_videoservice_videoservice_updatevideo",
       "target": "mapper_videomapper_videomapper_todto"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "service_linkservice_linkservice",
+      "target": "mapper_videomapper_videomapper_todto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "service_linkservice_linkservice_createlink",
+      "target": "mapper_videomapper_videomapper_todto",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1381,10 +1582,30 @@
       "target": "runtimeexception"
     },
     {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/exception/LinkExpiredException.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "exception_linkexpiredexception_linkexpiredexception",
+      "target": "runtimeexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/exception/LinkNotFoundException.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "exception_linknotfoundexception_linknotfoundexception",
+      "target": "runtimeexception",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
-      "source_location": "L14",
+      "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
+      "source_location": "L16",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "exception_globalexceptionhandler_globalexceptionhandler",
@@ -1393,12 +1614,32 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/main/java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
-      "source_location": "L19",
+      "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
+      "source_location": "L21",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "exception_globalexceptionhandler_globalexceptionhandler",
       "target": "exception_globalexceptionhandler_globalexceptionhandler_handleinvalidparam"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handlelinknotfound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "exception_globalexceptionhandler_globalexceptionhandler",
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handlelinkexpired",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -1816,9 +2057,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/DataSourceConfig.java",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "datasourceconfig_java",
-      "target": "spring_datasource_primary",
-      "confidence_score": 1.0
+      "target": "spring_datasource_primary"
     },
     {
       "relation": "method",
@@ -1826,9 +2067,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/DataSourceConfig.java",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "datasourceconfig_java",
-      "target": "spring_datasource_replica",
-      "confidence_score": 1.0
+      "target": "spring_datasource_replica"
     },
     {
       "relation": "method",
@@ -1836,9 +2077,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/DataSourceConfig.java",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "datasourceconfig_java",
-      "target": "routingdatasource_java",
-      "confidence_score": 1.0
+      "target": "routingdatasource_java"
     },
     {
       "relation": "extends",
@@ -1867,9 +2108,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routingdatasource_java",
-      "target": "config_routingdatasource_routingdatasource_getconnection",
-      "confidence_score": 1.0
+      "target": "config_routingdatasource_routingdatasource_getconnection"
     },
     {
       "relation": "method",
@@ -1877,9 +2118,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routingdatasource_java",
-      "target": "config_routingdatasource_routingdatasource_isreplicaavailable",
-      "confidence_score": 1.0
+      "target": "config_routingdatasource_routingdatasource_isreplicaavailable"
     },
     {
       "relation": "method",
@@ -1887,9 +2128,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/RoutingDataSource.java",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "routingdatasource_java",
-      "target": "config_routingdatasource_routingdatasource_makereplicaup",
-      "confidence_score": 1.0
+      "target": "config_routingdatasource_routingdatasource_makereplicaup"
     },
     {
       "relation": "references",
@@ -2077,9 +2318,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "java_kavin_personal_project_streambase_config_eventserializer_java",
-      "target": "config_eventserializer_eventserializer",
-      "confidence_score": 1.0
+      "target": "config_eventserializer_eventserializer"
     },
     {
       "relation": "contains",
@@ -2087,9 +2328,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/EventDeserializer.java",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "java_kavin_personal_project_streambase_config_eventserializer_java",
-      "target": "config_eventdeserializer_eventdeserializer",
-      "confidence_score": 1.0
+      "target": "config_eventdeserializer_eventdeserializer"
     },
     {
       "relation": "method",
@@ -2097,9 +2338,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/EventSerializer.java",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_eventserializer_eventserializer",
-      "target": "config_eventserializer_eventserializer_serialize",
-      "confidence_score": 1.0
+      "target": "config_eventserializer_eventserializer_serialize"
     },
     {
       "relation": "method",
@@ -2107,9 +2348,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/ReplicaHealthMonitor.java",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_replicahealthmonitor_replicahealthmonitor",
-      "target": "config_replicahealthmonitor_replicahealthmonitor_checkreplica",
-      "confidence_score": 1.0
+      "target": "config_replicahealthmonitor_replicahealthmonitor_checkreplica"
     },
     {
       "relation": "calls",
@@ -2150,9 +2391,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "java_kavin_personal_project_streambase_config_kafkaconfig_java",
-      "target": "config_kafkaconfig_kafkaconfig",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig"
     },
     {
       "relation": "method",
@@ -2160,9 +2401,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_kafkaconfig_kafkaconfig",
-      "target": "config_kafkaconfig_kafkaconfig_producerfactory",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig_producerfactory"
     },
     {
       "relation": "method",
@@ -2170,9 +2411,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_kafkaconfig_kafkaconfig",
-      "target": "config_kafkaconfig_kafkaconfig_kafkatemplate",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig_kafkatemplate"
     },
     {
       "relation": "method",
@@ -2180,9 +2421,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_kafkaconfig_kafkaconfig",
-      "target": "config_kafkaconfig_kafkaconfig_videouploadedconsumerfactory",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig_videouploadedconsumerfactory"
     },
     {
       "relation": "method",
@@ -2190,9 +2431,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_kafkaconfig_kafkaconfig",
-      "target": "config_kafkaconfig_kafkaconfig_videouploadedlistenercontainerfactory",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig_videouploadedlistenercontainerfactory"
     },
     {
       "relation": "method",
@@ -2200,9 +2441,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_kafkaconfig_kafkaconfig",
-      "target": "config_kafkaconfig_kafkaconfig_kafkaadmin",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig_kafkaadmin"
     },
     {
       "relation": "method",
@@ -2210,9 +2451,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_kafkaconfig_kafkaconfig",
-      "target": "config_kafkaconfig_kafkaconfig_videouploadedtopic",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig_videouploadedtopic"
     },
     {
       "relation": "method",
@@ -2220,9 +2461,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_kafkaconfig_kafkaconfig",
-      "target": "config_kafkaconfig_kafkaconfig_videouploadeddlttopic",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig_videouploadeddlttopic"
     },
     {
       "relation": "calls",
@@ -2231,9 +2472,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_kafkaconfig_kafkaconfig_kafkatemplate",
-      "target": "config_kafkaconfig_kafkaconfig_producerfactory",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig_producerfactory"
     },
     {
       "relation": "calls",
@@ -2242,9 +2483,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/KafkaConfig.java",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_kafkaconfig_kafkaconfig_videouploadedlistenercontainerfactory",
-      "target": "config_kafkaconfig_kafkaconfig_videouploadedconsumerfactory",
-      "confidence_score": 1.0
+      "target": "config_kafkaconfig_kafkaconfig_videouploadedconsumerfactory"
     },
     {
       "relation": "method",
@@ -2252,9 +2493,9 @@
       "source_file": "java/kavin/personal_project/streambase/config/EventDeserializer.java",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_eventdeserializer_eventdeserializer",
-      "target": "config_eventdeserializer_eventdeserializer_deserialize",
-      "confidence_score": 1.0
+      "target": "config_eventdeserializer_eventdeserializer_deserialize"
     },
     {
       "relation": "method",
@@ -2262,9 +2503,9 @@
       "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "consumer_videoprocesscor_videoprocesscor",
-      "target": "consumer_videoprocesscor_videoprocesscor_process",
-      "confidence_score": 1.0
+      "target": "consumer_videoprocesscor_videoprocesscor_process"
     },
     {
       "relation": "method",
@@ -2272,9 +2513,9 @@
       "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "consumer_videoprocesscor_videoprocesscor",
-      "target": "consumer_videoprocesscor_videoprocesscor_updatestatus",
-      "confidence_score": 1.0
+      "target": "consumer_videoprocesscor_videoprocesscor_updatestatus"
     },
     {
       "relation": "calls",
@@ -2283,11 +2524,174 @@
       "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "consumer_videoprocesscor_videoprocesscor_process",
-      "target": "consumer_videoprocesscor_videoprocesscor_updatestatus",
+      "target": "consumer_videoprocesscor_videoprocesscor_updatestatus"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/dto/LinkDto.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "java_kavin_personal_project_streambase_dto_linkdto_java",
+      "target": "dto_linkdto_linkdto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "java_kavin_personal_project_streambase_repository_linkrepository_java",
+      "target": "repository_linkrepository_linkrepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "repository_linkrepository_linkrepository",
+      "target": "repository_linkrepository_linkrepository_findbycode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "repository_linkrepository_linkrepository",
+      "target": "repository_linkrepository_linkrepository_incrementclickcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "service_linkservice_linkservice_redirect",
+      "target": "repository_linkrepository_linkrepository_findbycode"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "service_linkservice_linkservice_flushclickcounts",
+      "target": "repository_linkrepository_linkrepository_incrementclickcount"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/entity/LinkEntity.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "entity_linkentity_linkentity",
+      "target": "entity_linkentity_linkentity_oncreate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "java_kavin_personal_project_streambase_controller_linkcontroller_java",
+      "target": "controller_linkcontroller_linkcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "controller_linkcontroller_linkcontroller",
+      "target": "service_linkservice_linkservice_createlink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "controller_linkcontroller_linkcontroller",
+      "target": "service_linkservice_linkservice_redirect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "java_kavin_personal_project_streambase_service_linkservice_java",
+      "target": "service_linkservice_linkservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "service_linkservice_linkservice",
+      "target": "service_linkservice_linkservice_createlink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "service_linkservice_linkservice",
+      "target": "service_linkservice_linkservice_tobase62",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "service_linkservice_linkservice",
+      "target": "service_linkservice_linkservice_redirect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "service_linkservice_linkservice",
+      "target": "service_linkservice_linkservice_flushclickcounts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "service_linkservice_linkservice_createlink",
+      "target": "service_linkservice_linkservice_tobase62",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "70e6ba4fc269e7c8f056e7c6b8a5e613d62a075a"
+  "built_at_commit": "bcf292445cc27ae73477648131a571ef3f2c5297"
 }
