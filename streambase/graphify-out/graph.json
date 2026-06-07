@@ -8,7 +8,7 @@
       "file_type": "code",
       "source_file": "src/test/java/kavin/personal_project/streambase/StreambaseApplicationTests.java",
       "source_location": "L9",
-      "community": 10,
+      "community": 11,
       "norm_label": ".contextloads()",
       "id": "streambase_streambaseapplicationtests_streambaseapplicationtests_contextloads"
     },
@@ -17,7 +17,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/StreambaseApplication.java",
       "source_location": "L7",
-      "community": 10,
+      "community": 11,
       "norm_label": "streambaseapplication",
       "id": "streambase_streambaseapplication_streambaseapplication"
     },
@@ -26,7 +26,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/StreambaseApplication.java",
       "source_location": "L11",
-      "community": 10,
+      "community": 11,
       "norm_label": ".main()",
       "id": "streambase_streambaseapplication_streambaseapplication_main"
     },
@@ -35,7 +35,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/UpdateVideoRequest.java",
       "source_location": "L1",
-      "community": 14,
+      "community": 15,
       "norm_label": "updatevideorequest.java",
       "id": "src_main_java_kavin_personal_project_streambase_dto_updatevideorequest_java"
     },
@@ -44,7 +44,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/UpdateVideoRequest.java",
       "source_location": "L7",
-      "community": 14,
+      "community": 15,
       "norm_label": "updatevideorequest",
       "id": "dto_updatevideorequest_updatevideorequest"
     },
@@ -53,7 +53,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/CreateVideoRequest.java",
       "source_location": "L7",
-      "community": 18,
+      "community": 21,
       "norm_label": "createvideorequest",
       "id": "dto_createvideorequest_createvideorequest"
     },
@@ -62,7 +62,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/dto/VideoDto.java",
       "source_location": "L8",
-      "community": 19,
+      "community": 22,
       "norm_label": "videodto",
       "id": "dto_videodto_videodto"
     },
@@ -71,7 +71,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/repository/VideoRepository.java",
       "source_location": "L1",
-      "community": 15,
+      "community": 16,
       "norm_label": "videorepository.java",
       "id": "src_main_java_kavin_personal_project_streambase_repository_videorepository_java"
     },
@@ -80,7 +80,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/repository/VideoRepository.java",
       "source_location": "L6",
-      "community": 15,
+      "community": 16,
       "norm_label": "videorepository",
       "id": "repository_videorepository_videorepository"
     },
@@ -89,7 +89,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/config/RedisConfig.java",
       "source_location": "L1",
-      "community": 11,
+      "community": 12,
       "norm_label": "redisconfig.java",
       "id": "src_main_java_kavin_personal_project_streambase_config_redisconfig_java"
     },
@@ -98,7 +98,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/config/RedisConfig.java",
       "source_location": "L17",
-      "community": 11,
+      "community": 12,
       "norm_label": "redisconfig",
       "id": "config_redisconfig_redisconfig"
     },
@@ -107,7 +107,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/config/RedisConfig.java",
       "source_location": "L20",
-      "community": 11,
+      "community": 12,
       "norm_label": ".cachemanager()",
       "id": "config_redisconfig_redisconfig_cachemanager"
     },
@@ -116,7 +116,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/entity/VideoEntity.java",
       "source_location": "L8",
-      "community": 13,
+      "community": 14,
       "norm_label": "videoentity",
       "id": "entity_videoentity_videoentity"
     },
@@ -125,7 +125,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L11",
-      "community": 1,
+      "community": 0,
       "norm_label": "videomapper",
       "id": "mapper_videomapper_videomapper"
     },
@@ -134,7 +134,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L14",
-      "community": 1,
+      "community": 0,
       "norm_label": ".todto()",
       "id": "mapper_videomapper_videomapper_todto"
     },
@@ -143,7 +143,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L20",
-      "community": 1,
+      "community": 0,
       "norm_label": ".toentity()",
       "id": "mapper_videomapper_videomapper_toentity"
     },
@@ -152,7 +152,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L24",
-      "community": 1,
+      "community": 0,
       "norm_label": ".updateentity()",
       "id": "mapper_videomapper_videomapper_updateentity"
     },
@@ -161,7 +161,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/HealthController.java",
       "source_location": "L7",
-      "community": 16,
+      "community": 17,
       "norm_label": "healthcontroller",
       "id": "controller_healthcontroller_healthcontroller"
     },
@@ -170,7 +170,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/HealthController.java",
       "source_location": "L10",
-      "community": 16,
+      "community": 17,
       "norm_label": ".health()",
       "id": "controller_healthcontroller_healthcontroller_health"
     },
@@ -179,7 +179,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/VideoController.java",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "videocontroller.java",
       "id": "src_main_java_kavin_personal_project_streambase_controller_videocontroller_java"
     },
@@ -188,7 +188,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/controller/VideoController.java",
       "source_location": "L17",
-      "community": 1,
+      "community": 0,
       "norm_label": "videocontroller",
       "id": "controller_videocontroller_videocontroller"
     },
@@ -197,7 +197,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L26",
-      "community": 1,
+      "community": 0,
       "norm_label": ".getallvideos()",
       "id": "service_videoservice_videoservice_getallvideos"
     },
@@ -206,7 +206,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L31",
-      "community": 1,
+      "community": 0,
       "norm_label": ".getvideo()",
       "id": "service_videoservice_videoservice_getvideo"
     },
@@ -215,7 +215,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L38",
-      "community": 1,
+      "community": 0,
       "norm_label": ".createvideo()",
       "id": "service_videoservice_videoservice_createvideo"
     },
@@ -224,7 +224,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L46",
-      "community": 1,
+      "community": 0,
       "norm_label": ".updatevideo()",
       "id": "service_videoservice_videoservice_updatevideo"
     },
@@ -233,7 +233,7 @@
       "file_type": "code",
       "source_file": "src/main/java/kavin/personal_project/streambase/service/VideoService.java",
       "source_location": "L56",
-      "community": 1,
+      "community": 0,
       "norm_label": ".deletevideo()",
       "id": "service_videoservice_videoservice_deletevideo"
     },
@@ -291,7 +291,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "postgres-primary (docker service)",
       "id": "compose_postgres_primary"
     },
@@ -317,7 +317,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "redis (docker service)",
       "id": "compose_redis"
     },
@@ -330,7 +330,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "app-1 (spring boot instance)",
       "id": "compose_app_1"
     },
@@ -343,7 +343,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "app-2 (spring boot instance)",
       "id": "compose_app_2"
     },
@@ -356,7 +356,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "app-3 (spring boot instance)",
       "id": "compose_app_3"
     },
@@ -369,7 +369,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "nginx (load balancer service)",
       "id": "compose_nginx"
     },
@@ -382,7 +382,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "application.yaml (spring boot config)",
       "id": "application_yaml_config"
     },
@@ -395,7 +395,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "application-dev.yaml (dev profile config)",
       "id": "application_dev_yaml_config"
     },
@@ -408,7 +408,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "streambase system design learning project",
       "id": "claude_md_streambase_project"
     },
@@ -422,7 +422,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Cache-aside chosen for video metadata reads: app checks Redis first, falls back to PostgreSQL on miss, then populates the cache. Provides ~10x read speedup on cache hit. TTL of 5 minutes balances freshness vs performance. Cache invalidation on PUT/DELETE ensures consistency.",
-      "community": 0,
+      "community": 1,
       "norm_label": "cache-aside pattern",
       "id": "claude_md_cache_aside_pattern"
     },
@@ -450,7 +450,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Kafka replaces RabbitMQ throughout because Kafka is more commonly asked about in system design interviews. Kafka supports message replay and dead-letter topics, enabling the async video processing pipeline and notification fan-out scenarios.",
-      "community": 0,
+      "community": 1,
       "norm_label": "kafka chosen over rabbitmq",
       "id": "claude_md_kafka_over_rabbitmq"
     },
@@ -464,7 +464,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Consistent hashing ring implemented to distribute video IDs across PostgreSQL shards. When a new shard is added, only ~1/3 of keys need to move (not all), unlike naive modulo hashing \u2014 teaches hot shard and rebalancing strategies.",
-      "community": 0,
+      "community": 1,
       "norm_label": "consistent hashing for db sharding",
       "id": "claude_md_consistent_hashing"
     },
@@ -478,7 +478,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Pull model (fan-out on read) is slow at scale due to querying all followed creators. Push model (fan-out on write) pre-computes Redis feed lists for fast reads. Hybrid chosen: push for normal users, pull for celebrities (>10K followers) to avoid write amplification.",
-      "community": 0,
+      "community": 1,
       "norm_label": "fan-out on read vs write",
       "id": "claude_md_fanout_pattern"
     },
@@ -492,7 +492,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "WebSocket connections are stateful and server-local. Redis Pub/Sub bridges multiple server instances: on new comment, publish to channel comments:{videoId}; each server subscribes and pushes to its local WebSocket clients \u2014 key insight for real-time chat system interviews.",
-      "community": 0,
+      "community": 1,
       "norm_label": "redis pub/sub for cross-server comments",
       "id": "claude_md_redis_pubsub_comments"
     },
@@ -506,7 +506,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Sliding window counter implemented with Redis INCR + EXPIRE. Applied at 100 req/min per IP (general) and 10 uploads/hour per user. Returns HTTP 429 with Retry-After header. Chosen over token bucket for simplicity; trade-offs documented.",
-      "community": 0,
+      "community": 1,
       "norm_label": "sliding window rate limiting via redis",
       "id": "claude_md_rate_limiting"
     },
@@ -520,7 +520,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "All schema changes go in src/main/resources/db/migration/ as Flyway V{n}__{description}.sql files. Flyway runs automatically on startup, ensuring schema and code stay in sync across environments without manual intervention.",
-      "community": 0,
+      "community": 1,
       "norm_label": "flyway sql migrations convention",
       "id": "claude_md_flyway_migrations"
     },
@@ -534,7 +534,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Three stateless Spring Boot instances (app-1, app-2, app-3) run behind Nginx. Round-robin and least_conn strategies compared. Statelessness (no in-process session state) is required for horizontal scaling \u2014 any instance can serve any request.",
-      "community": 0,
+      "community": 1,
       "norm_label": "horizontal scaling \u2014 stateless api behind load balancer",
       "id": "claude_md_horizontal_scaling"
     },
@@ -548,7 +548,7 @@
       "author": null,
       "contributor": "kavinkumar",
       "rationale": "Permanently failed video processing jobs and failed notifications are routed to a dead-letter Kafka topic. Consumer crash mid-processing restarts and replays from Kafka \u2014 demonstrates at-least-once delivery semantics and the need for idempotent consumers.",
-      "community": 0,
+      "community": 1,
       "norm_label": "dead-letter topic (dlq) for failed processing",
       "id": "claude_md_dead_letter_topic"
     },
@@ -763,7 +763,7 @@
       "file_type": "code",
       "source_file": "service/VideoService.java",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "videoservice.java",
       "id": "service_videoservice_java"
     },
@@ -1034,7 +1034,7 @@
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/mapper/VideoMapper.java",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "videomapper.java",
       "id": "java_kavin_personal_project_streambase_mapper_videomapper_java"
     },
@@ -1043,7 +1043,7 @@
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
       "source_location": "L12",
-      "community": 12,
+      "community": 13,
       "norm_label": "videoprocesscor",
       "id": "consumer_videoprocesscor_videoprocesscor"
     },
@@ -1052,7 +1052,7 @@
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
       "source_location": "L20",
-      "community": 12,
+      "community": 13,
       "norm_label": ".process()",
       "id": "consumer_videoprocesscor_videoprocesscor_process"
     },
@@ -1061,7 +1061,7 @@
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/consumer/VideoProcesscor.java",
       "source_location": "L39",
-      "community": 12,
+      "community": 13,
       "norm_label": ".updatestatus()",
       "id": "consumer_videoprocesscor_videoprocesscor_updatestatus"
     },
@@ -1070,7 +1070,7 @@
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/event/VideoUploadedEvent.java",
       "source_location": "L1",
-      "community": 20,
+      "community": 23,
       "norm_label": "videouploadedevent.java",
       "id": "java_kavin_personal_project_streambase_event_videouploadedevent_java"
     },
@@ -1079,189 +1079,342 @@
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/dto/CreateLinkRequest.java",
       "source_location": "L5",
-      "id": "dto_createlinkrequest_createlinkrequest",
-      "community": 21,
-      "norm_label": "createlinkrequest"
+      "community": 24,
+      "norm_label": "createlinkrequest",
+      "id": "dto_createlinkrequest_createlinkrequest"
     },
     {
       "label": "LinkDto.java",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/dto/LinkDto.java",
       "source_location": "L1",
-      "id": "java_kavin_personal_project_streambase_dto_linkdto_java",
-      "community": 17,
-      "norm_label": "linkdto.java"
+      "community": 18,
+      "norm_label": "linkdto.java",
+      "id": "java_kavin_personal_project_streambase_dto_linkdto_java"
     },
     {
       "label": "LinkDto",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/dto/LinkDto.java",
       "source_location": "L8",
-      "id": "dto_linkdto_linkdto",
-      "community": 17,
-      "norm_label": "linkdto"
+      "community": 18,
+      "norm_label": "linkdto",
+      "id": "dto_linkdto_linkdto"
     },
     {
       "label": "LinkRepository.java",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
       "source_location": "L1",
-      "id": "java_kavin_personal_project_streambase_repository_linkrepository_java",
-      "community": 6,
-      "norm_label": "linkrepository.java"
+      "community": 0,
+      "norm_label": "linkrepository.java",
+      "id": "java_kavin_personal_project_streambase_repository_linkrepository_java"
     },
     {
       "label": "LinkRepository",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
       "source_location": "L11",
-      "id": "repository_linkrepository_linkrepository",
-      "community": 6,
-      "norm_label": "linkrepository"
+      "community": 0,
+      "norm_label": "linkrepository",
+      "id": "repository_linkrepository_linkrepository"
     },
     {
       "label": ".findByCode()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
       "source_location": "L12",
-      "id": "repository_linkrepository_linkrepository_findbycode",
-      "community": 6,
-      "norm_label": ".findbycode()"
+      "community": 0,
+      "norm_label": ".findbycode()",
+      "id": "repository_linkrepository_linkrepository_findbycode"
     },
     {
       "label": ".incrementClickCount()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
       "source_location": "L14",
-      "id": "repository_linkrepository_linkrepository_incrementclickcount",
-      "community": 6,
-      "norm_label": ".incrementclickcount()"
+      "community": 0,
+      "norm_label": ".incrementclickcount()",
+      "id": "repository_linkrepository_linkrepository_incrementclickcount"
     },
     {
       "label": "LinkEntity",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/entity/LinkEntity.java",
       "source_location": "L9",
-      "id": "entity_linkentity_linkentity",
-      "community": 13,
-      "norm_label": "linkentity"
+      "community": 14,
+      "norm_label": "linkentity",
+      "id": "entity_linkentity_linkentity"
     },
     {
       "label": ".onCreate()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/entity/LinkEntity.java",
       "source_location": "L41",
-      "id": "entity_linkentity_linkentity_oncreate",
-      "community": 13,
-      "norm_label": ".oncreate()"
+      "community": 14,
+      "norm_label": ".oncreate()",
+      "id": "entity_linkentity_linkentity_oncreate"
     },
     {
       "label": "LinkController.java",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
       "source_location": "L1",
-      "id": "java_kavin_personal_project_streambase_controller_linkcontroller_java",
-      "community": 6,
-      "norm_label": "linkcontroller.java"
+      "community": 0,
+      "norm_label": "linkcontroller.java",
+      "id": "java_kavin_personal_project_streambase_controller_linkcontroller_java"
     },
     {
       "label": "LinkController",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
       "source_location": "L13",
-      "id": "controller_linkcontroller_linkcontroller",
-      "community": 6,
-      "norm_label": "linkcontroller"
+      "community": 0,
+      "norm_label": "linkcontroller",
+      "id": "controller_linkcontroller_linkcontroller"
     },
     {
       "label": "LinkService.java",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L1",
-      "id": "java_kavin_personal_project_streambase_service_linkservice_java",
-      "community": 1,
-      "norm_label": "linkservice.java"
+      "community": 0,
+      "norm_label": "linkservice.java",
+      "id": "java_kavin_personal_project_streambase_service_linkservice_java"
     },
     {
       "label": "LinkService",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L22",
-      "id": "service_linkservice_linkservice",
-      "community": 1,
-      "norm_label": "linkservice"
+      "community": 0,
+      "norm_label": "linkservice",
+      "id": "service_linkservice_linkservice"
     },
     {
       "label": ".createLink()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L33",
-      "id": "service_linkservice_linkservice_createlink",
-      "community": 1,
-      "norm_label": ".createlink()"
+      "community": 0,
+      "norm_label": ".createlink()",
+      "id": "service_linkservice_linkservice_createlink"
     },
     {
       "label": ".toBase62()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L61",
-      "id": "service_linkservice_linkservice_tobase62",
-      "community": 1,
-      "norm_label": ".tobase62()"
+      "community": 0,
+      "norm_label": ".tobase62()",
+      "id": "service_linkservice_linkservice_tobase62"
     },
     {
       "label": ".redirect()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L81",
-      "id": "service_linkservice_linkservice_redirect",
-      "community": 6,
-      "norm_label": ".redirect()"
+      "community": 0,
+      "norm_label": ".redirect()",
+      "id": "service_linkservice_linkservice_redirect"
     },
     {
       "label": ".flushClickCounts()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L103",
-      "id": "service_linkservice_linkservice_flushclickcounts",
-      "community": 6,
-      "norm_label": ".flushclickcounts()"
+      "community": 0,
+      "norm_label": ".flushclickcounts()",
+      "id": "service_linkservice_linkservice_flushclickcounts"
     },
     {
       "label": "LinkExpiredException",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/exception/LinkExpiredException.java",
       "source_location": "L3",
-      "id": "exception_linkexpiredexception_linkexpiredexception",
       "community": 9,
-      "norm_label": "linkexpiredexception"
+      "norm_label": "linkexpiredexception",
+      "id": "exception_linkexpiredexception_linkexpiredexception"
     },
     {
       "label": "LinkNotFoundException",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/exception/LinkNotFoundException.java",
       "source_location": "L3",
-      "id": "exception_linknotfoundexception_linknotfoundexception",
       "community": 9,
-      "norm_label": "linknotfoundexception"
+      "norm_label": "linknotfoundexception",
+      "id": "exception_linknotfoundexception_linknotfoundexception"
     },
     {
       "label": ".handleLinkNotFound()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L30",
-      "id": "exception_globalexceptionhandler_globalexceptionhandler_handlelinknotfound",
       "community": 7,
-      "norm_label": ".handlelinknotfound()"
+      "norm_label": ".handlelinknotfound()",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handlelinknotfound"
     },
     {
       "label": ".handleLinkExpired()",
       "file_type": "code",
       "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L35",
-      "id": "exception_globalexceptionhandler_globalexceptionhandler_handlelinkexpired",
       "community": 7,
-      "norm_label": ".handlelinkexpired()"
+      "norm_label": ".handlelinkexpired()",
+      "id": "exception_globalexceptionhandler_globalexceptionhandler_handlelinkexpired"
+    },
+    {
+      "label": "sliding_window_counter.lua",
+      "file_type": "code",
+      "source_file": "resources/scripts/sliding_window_counter.lua",
+      "source_location": "L1",
+      "id": "resources_scripts_sliding_window_counter_lua",
+      "community": 25,
+      "norm_label": "sliding_window_counter.lua"
+    },
+    {
+      "label": "RateLimiterProperties",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/RateLimiterProperties.java",
+      "source_location": "L10",
+      "id": "config_ratelimiterproperties_ratelimiterproperties",
+      "community": 19,
+      "norm_label": "ratelimiterproperties"
+    },
+    {
+      "label": "Bucket",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/RateLimiterProperties.java",
+      "source_location": "L20",
+      "id": "config_ratelimiterproperties_bucket",
+      "community": 19,
+      "norm_label": "bucket"
+    },
+    {
+      "label": "RateLimiterConfig",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/RateLimiterConfig.java",
+      "source_location": "L10",
+      "id": "config_ratelimiterconfig_ratelimiterconfig",
+      "community": 20,
+      "norm_label": "ratelimiterconfig"
+    },
+    {
+      "label": ".slidingWindowScript()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/RateLimiterConfig.java",
+      "source_location": "L13",
+      "id": "config_ratelimiterconfig_ratelimiterconfig_slidingwindowscript",
+      "community": 20,
+      "norm_label": ".slidingwindowscript()"
+    },
+    {
+      "label": "WebConfig.java",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/WebConfig.java",
+      "source_location": "L1",
+      "id": "java_kavin_personal_project_streambase_config_webconfig_java",
+      "community": 10,
+      "norm_label": "webconfig.java"
+    },
+    {
+      "label": "WebConfig",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/WebConfig.java",
+      "source_location": "L9",
+      "id": "config_webconfig_webconfig",
+      "community": 10,
+      "norm_label": "webconfig"
+    },
+    {
+      "label": "WebMvcConfigurer",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "webmvcconfigurer",
+      "community": 10,
+      "norm_label": "webmvcconfigurer"
+    },
+    {
+      "label": ".addInterceptors()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/config/WebConfig.java",
+      "source_location": "L15",
+      "id": "config_webconfig_webconfig_addinterceptors",
+      "community": 10,
+      "norm_label": ".addinterceptors()"
+    },
+    {
+      "label": "RateLimiterInterceptor",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L20",
+      "id": "filter_ratelimiterinterceptor_ratelimiterinterceptor",
+      "community": 6,
+      "norm_label": "ratelimiterinterceptor"
+    },
+    {
+      "label": "HandlerInterceptor",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "handlerinterceptor",
+      "community": 6,
+      "norm_label": "handlerinterceptor"
+    },
+    {
+      "label": ".preHandle()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L30",
+      "id": "filter_ratelimiterinterceptor_ratelimiterinterceptor_prehandle",
+      "community": 6,
+      "norm_label": ".prehandle()"
+    },
+    {
+      "label": ".isExcluded()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L56",
+      "id": "filter_ratelimiterinterceptor_ratelimiterinterceptor_isexcluded",
+      "community": 6,
+      "norm_label": ".isexcluded()"
+    },
+    {
+      "label": ".resolveClientIp()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L60",
+      "id": "filter_ratelimiterinterceptor_ratelimiterinterceptor_resolveclientip",
+      "community": 6,
+      "norm_label": ".resolveclientip()"
+    },
+    {
+      "label": ".isUpload()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L75",
+      "id": "filter_ratelimiterinterceptor_ratelimiterinterceptor_isupload",
+      "community": 6,
+      "norm_label": ".isupload()"
+    },
+    {
+      "label": ".resolveUserId()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L80",
+      "id": "filter_ratelimiterinterceptor_ratelimiterinterceptor_resolveuserid",
+      "community": 6,
+      "norm_label": ".resolveuserid()"
+    },
+    {
+      "label": ".check()",
+      "file_type": "code",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L85",
+      "id": "filter_ratelimiterinterceptor_ratelimiterinterceptor_check",
+      "community": 6,
+      "norm_label": ".check()"
     }
   ],
   "links": [
@@ -1414,9 +1567,9 @@
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "service_linkservice_linkservice",
-      "target": "mapper_videomapper_videomapper_todto",
-      "confidence_score": 1.0
+      "target": "mapper_videomapper_videomapper_todto"
     },
     {
       "relation": "calls",
@@ -1425,9 +1578,9 @@
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "service_linkservice_linkservice_createlink",
-      "target": "mapper_videomapper_videomapper_todto",
-      "confidence_score": 1.0
+      "target": "mapper_videomapper_videomapper_todto"
     },
     {
       "relation": "calls",
@@ -1587,9 +1740,9 @@
       "source_file": "java/kavin/personal_project/streambase/exception/LinkExpiredException.java",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "exception_linkexpiredexception_linkexpiredexception",
-      "target": "runtimeexception",
-      "confidence_score": 1.0
+      "target": "runtimeexception"
     },
     {
       "relation": "extends",
@@ -1597,9 +1750,9 @@
       "source_file": "java/kavin/personal_project/streambase/exception/LinkNotFoundException.java",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "exception_linknotfoundexception_linknotfoundexception",
-      "target": "runtimeexception",
-      "confidence_score": 1.0
+      "target": "runtimeexception"
     },
     {
       "relation": "method",
@@ -1627,9 +1780,9 @@
       "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "exception_globalexceptionhandler_globalexceptionhandler",
-      "target": "exception_globalexceptionhandler_globalexceptionhandler_handlelinknotfound",
-      "confidence_score": 1.0
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handlelinknotfound"
     },
     {
       "relation": "method",
@@ -1637,9 +1790,9 @@
       "source_file": "java/kavin/personal_project/streambase/exception/GlobalExceptionHandler.java",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "exception_globalexceptionhandler_globalexceptionhandler",
-      "target": "exception_globalexceptionhandler_globalexceptionhandler_handlelinkexpired",
-      "confidence_score": 1.0
+      "target": "exception_globalexceptionhandler_globalexceptionhandler_handlelinkexpired"
     },
     {
       "relation": "references",
@@ -2534,9 +2687,9 @@
       "source_file": "java/kavin/personal_project/streambase/dto/LinkDto.java",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "java_kavin_personal_project_streambase_dto_linkdto_java",
-      "target": "dto_linkdto_linkdto",
-      "confidence_score": 1.0
+      "target": "dto_linkdto_linkdto"
     },
     {
       "relation": "contains",
@@ -2544,9 +2697,9 @@
       "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "java_kavin_personal_project_streambase_repository_linkrepository_java",
-      "target": "repository_linkrepository_linkrepository",
-      "confidence_score": 1.0
+      "target": "repository_linkrepository_linkrepository"
     },
     {
       "relation": "method",
@@ -2554,9 +2707,9 @@
       "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "repository_linkrepository_linkrepository",
-      "target": "repository_linkrepository_linkrepository_findbycode",
-      "confidence_score": 1.0
+      "target": "repository_linkrepository_linkrepository_findbycode"
     },
     {
       "relation": "method",
@@ -2564,9 +2717,9 @@
       "source_file": "java/kavin/personal_project/streambase/repository/LinkRepository.java",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "repository_linkrepository_linkrepository",
-      "target": "repository_linkrepository_linkrepository_incrementclickcount",
-      "confidence_score": 1.0
+      "target": "repository_linkrepository_linkrepository_incrementclickcount"
     },
     {
       "relation": "calls",
@@ -2596,9 +2749,9 @@
       "source_file": "java/kavin/personal_project/streambase/entity/LinkEntity.java",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "entity_linkentity_linkentity",
-      "target": "entity_linkentity_linkentity_oncreate",
-      "confidence_score": 1.0
+      "target": "entity_linkentity_linkentity_oncreate"
     },
     {
       "relation": "contains",
@@ -2606,9 +2759,9 @@
       "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "java_kavin_personal_project_streambase_controller_linkcontroller_java",
-      "target": "controller_linkcontroller_linkcontroller",
-      "confidence_score": 1.0
+      "target": "controller_linkcontroller_linkcontroller"
     },
     {
       "relation": "method",
@@ -2616,9 +2769,9 @@
       "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controller_linkcontroller_linkcontroller",
-      "target": "service_linkservice_linkservice_createlink",
-      "confidence_score": 1.0
+      "target": "service_linkservice_linkservice_createlink"
     },
     {
       "relation": "method",
@@ -2626,9 +2779,9 @@
       "source_file": "java/kavin/personal_project/streambase/controller/LinkController.java",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controller_linkcontroller_linkcontroller",
-      "target": "service_linkservice_linkservice_redirect",
-      "confidence_score": 1.0
+      "target": "service_linkservice_linkservice_redirect"
     },
     {
       "relation": "contains",
@@ -2636,9 +2789,9 @@
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "java_kavin_personal_project_streambase_service_linkservice_java",
-      "target": "service_linkservice_linkservice",
-      "confidence_score": 1.0
+      "target": "service_linkservice_linkservice"
     },
     {
       "relation": "method",
@@ -2646,9 +2799,9 @@
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "service_linkservice_linkservice",
-      "target": "service_linkservice_linkservice_createlink",
-      "confidence_score": 1.0
+      "target": "service_linkservice_linkservice_createlink"
     },
     {
       "relation": "method",
@@ -2656,9 +2809,9 @@
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "service_linkservice_linkservice",
-      "target": "service_linkservice_linkservice_tobase62",
-      "confidence_score": 1.0
+      "target": "service_linkservice_linkservice_tobase62"
     },
     {
       "relation": "method",
@@ -2666,9 +2819,9 @@
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "service_linkservice_linkservice",
-      "target": "service_linkservice_linkservice_redirect",
-      "confidence_score": 1.0
+      "target": "service_linkservice_linkservice_redirect"
     },
     {
       "relation": "method",
@@ -2676,9 +2829,9 @@
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "service_linkservice_linkservice",
-      "target": "service_linkservice_linkservice_flushclickcounts",
-      "confidence_score": 1.0
+      "target": "service_linkservice_linkservice_flushclickcounts"
     },
     {
       "relation": "calls",
@@ -2687,11 +2840,198 @@
       "source_file": "java/kavin/personal_project/streambase/service/LinkService.java",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "service_linkservice_linkservice_createlink",
-      "target": "service_linkservice_linkservice_tobase62",
+      "target": "service_linkservice_linkservice_tobase62"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/RateLimiterProperties.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "config_ratelimiterproperties_ratelimiterproperties",
+      "target": "config_ratelimiterproperties_bucket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/RateLimiterConfig.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "config_ratelimiterconfig_ratelimiterconfig",
+      "target": "config_ratelimiterconfig_ratelimiterconfig_slidingwindowscript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/WebConfig.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "java_kavin_personal_project_streambase_config_webconfig_java",
+      "target": "webmvcconfigurer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/WebConfig.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "java_kavin_personal_project_streambase_config_webconfig_java",
+      "target": "config_webconfig_webconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/WebConfig.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "config_webconfig_webconfig",
+      "target": "webmvcconfigurer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/config/WebConfig.java",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "config_webconfig_webconfig",
+      "target": "config_webconfig_webconfig_addinterceptors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor",
+      "target": "handlerinterceptor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_prehandle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_isexcluded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_resolveclientip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_isupload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_resolveuserid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor_prehandle",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_isexcluded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor_prehandle",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_resolveclientip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor_prehandle",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor_prehandle",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_isupload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "java/kavin/personal_project/streambase/filter/RateLimiterInterceptor.java",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "filter_ratelimiterinterceptor_ratelimiterinterceptor_prehandle",
+      "target": "filter_ratelimiterinterceptor_ratelimiterinterceptor_resolveuserid",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "bcf292445cc27ae73477648131a571ef3f2c5297"
+  "built_at_commit": "5a9060781993d06fc1dbdb86bfa148a4b7540dc9"
 }

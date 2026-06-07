@@ -6,6 +6,18 @@ spring:
       ddl-auto: validate
     open-in-view: false
 
+ratelimit:
+  enabled: true
+  ip:
+    limit: 100
+    window-seconds: 60
+  upload:
+    limit: 10
+    window-seconds: 3600
+  excluded-paths:
+    - /actuator/**
+    - /health
+
 logging:
   level:
     org.apache.kafka.clients: WARN

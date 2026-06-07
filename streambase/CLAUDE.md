@@ -88,7 +88,7 @@ design concepts. Every feature you build maps directly to a real interview quest
 ## My Current Progress
 
 ### 🔄 In Progress
-- [ ] **DAY 8, Task 1** — Create a `RateLimiterFilter` (Spring `HandlerInterceptor`)
+- [ ] **DAY 9, Task 1** — Add `Subscription` entity: `subscriber_id` follows `creator_id`
 
 ---
 
@@ -214,13 +214,13 @@ Cached links redirect in <5ms.
 ### DAY 8 — Rate Limiter for API Protection
 **Theme:** Rate Limiting
 
-- [ ] 1. Create a `RateLimiterFilter` (Spring `HandlerInterceptor`)
-- [ ] 2. Implement sliding window counter using Redis `INCR` + `EXPIRE`
-- [ ] 3. Apply: 100 requests/min per IP for general endpoints
-- [ ] 4. Apply: 10 uploads/hour per user for `POST /api/videos`
-- [ ] 5. Return HTTP 429 with `Retry-After` header when limit exceeded
-- [ ] 6. Test: write a script that sends 120 requests in 1 minute, verify throttling
-- [ ] 7. Bonus: document token bucket vs sliding window trade-offs in your notes
+- [x] 1. Create a `RateLimiterInterceptor` (Spring `HandlerInterceptor`)
+- [x] 2. Implement sliding window counter using Redis Lua script (atomic INCR + EXPIRE)
+- [x] 3. Apply: 100 requests/min per IP for general endpoints
+- [x] 4. Apply: 10 uploads/hour per user for `POST /api/videos` (X-User-Id header)
+- [x] 5. Return HTTP 429 with `Retry-After` header when limit exceeded
+- [x] 6. Test: send 110 requests, verify ~100 of 200 + ~10 of 429
+- [x] 7. Bonus: document token bucket vs sliding window trade-offs
 
 **✅ Day 8 Outcome:** StreamBase APIs are protected against abuse. You can implement
 and explain distributed rate limiting.
