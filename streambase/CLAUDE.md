@@ -88,7 +88,7 @@ design concepts. Every feature you build maps directly to a real interview quest
 ## My Current Progress
 
 ### 🔄 In Progress
-- [ ] **DAY 9, Task 1** — Add `Subscription` entity: `subscriber_id` follows `creator_id`
+- [ ] **DAY 10, Task 1** — Kill one API instance mid-request — does Nginx route to healthy ones?
 
 ---
 
@@ -230,13 +230,13 @@ and explain distributed rate limiting.
 ### DAY 9 — Subscription Notifications
 **Theme:** Event-Driven Architecture (Kafka)
 
-- [ ] 1. Add `Subscription` entity: `subscriber_id` follows `creator_id`
-- [ ] 2. On new video upload, publish `video.published` event to Kafka topic
-- [ ] 3. Create `NotificationConsumer`: fans out to each subscriber's notification queue
-- [ ] 4. Add notification types: `EMAIL`, `PUSH`, `IN_APP` (separate topics per type)
-- [ ] 5. Implement retry with exponential backoff (1s, 2s, 4s, 8s, max 3 retries)
-- [ ] 6. Failed notifications go to dead-letter topic
-- [ ] 7. Add `GET /api/notifications?userId={id}` to fetch user's notifications
+- [x] 1. Add `Subscription` entity: `subscriber_id` follows `creator_id`
+- [x] 2. On video status=READY, publish `video.published` event to Kafka topic
+- [x] 3. Create `NotificationFanOutConsumer`: queries subscribers, fans out to 3 channel topics
+- [x] 4. Notification types: `EMAIL`, `PUSH`, `IN_APP` (separate topics per type)
+- [x] 5. Implement retry with exponential backoff via Spring `DefaultErrorHandler` (3 attempts)
+- [x] 6. Failed notifications go to `notification.dlt` via `DeadLetterPublishingRecoverer`
+- [x] 7. Add `GET /api/notifications?userId={id}` to fetch user's notifications
 
 **✅ Day 9 Outcome:** Creators upload; subscribers get notified. Multiple notification
 channels with retry. Classic interview question solved.

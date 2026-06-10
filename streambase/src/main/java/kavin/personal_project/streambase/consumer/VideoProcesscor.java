@@ -1,6 +1,7 @@
 package kavin.personal_project.streambase.consumer;
 
 import kavin.personal_project.streambase.entity.VideoEntity;
+import kavin.personal_project.streambase.event.VideoPublishedEvent;
 import kavin.personal_project.streambase.event.VideoUploadedEvent;
 import kavin.personal_project.streambase.repository.VideoRepository;
 import lombok.RequiredArgsConstructor;
@@ -30,6 +31,13 @@ public class VideoProcesscor {
 
             updateStatus(event.videoId(), VideoEntity.VideoStatus.READY);
             log.info("Video ready: " + event.videoId());
+
+            videoRepository.findById(event.videoId()).ifPresent(video -> {
+
+                VideoPublishedEvent publishedEvent = new VideoPublishedEvent(video.getId(), video.getTitle(), video.getUploadedBy());
+                kafkaTemplate.send("video.published", publishedEvent);
+            });
+
         } catch (Exception e) {
             log.warning("Failed to process video " + event.videoId() + ": " + e.getMessage());
             kafkaTemplate.send("video.uploaded.DLT", event);
