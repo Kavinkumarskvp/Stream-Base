@@ -88,7 +88,7 @@ design concepts. Every feature you build maps directly to a real interview quest
 ## My Current Progress
 
 ### 🔄 In Progress
-- [ ] **DAY 10, Task 1** — Kill one API instance mid-request — does Nginx route to healthy ones?
+- [ ] **DAY 11, Task 1** — Define requirements: users see comments appear in real-time while watching
 
 ---
 
@@ -246,13 +246,13 @@ channels with retry. Classic interview question solved.
 ### DAY 10 — Chaos Day: Break StreamBase
 **Theme:** Resilience + Failure Modes
 
-- [ ] 1. Kill one API instance mid-request — does Nginx route to healthy ones?
-- [ ] 2. Stop Redis — does the app crash or fall back to DB?
-- [ ] 3. Flood `POST /api/videos` with 1000 rapid requests — does rate limiter hold?
-- [ ] 4. Stop Kafka while uploading — what happens to the processing pipeline?
-- [ ] 5. Stop the read replica — does read traffic failover to primary?
-- [ ] 6. Document each failure: "When X dies, Y happens because Z"
-- [ ] 7. Fix the worst failure you found (add circuit breaker or fallback)
+- [x] 1. Kill one API instance mid-request — Nginx routes to healthy ones (0 requests lost)
+- [x] 2. Stop Redis — found worst failure (504s); now fixed with timeout + fallback
+- [x] 3. Flood `POST /api/videos` with 1000 rapid requests — rate limiter held exactly at 100
+- [x] 4. Stop Kafka while uploading — uploads fail cleanly (no orphan rows due to @Transactional)
+- [x] 5. Stop the read replica — auto-failover to primary, auto-recovery via ReplicaHealthMonitor
+- [x] 6. Document each failure: "When X dies, Y happens because Z" (5 stories captured)
+- [x] 7. Fix the worst failure: Redis timeout 500ms + CacheErrorHandler for @Cacheable + Resilience4j @CircuitBreaker on LinkCacheService (extracted from LinkService for proxy-based AOP)
 
 **✅ Day 10 Outcome:** You know exactly how StreamBase fails. These failure stories
 are gold in interviews.
@@ -391,3 +391,63 @@ Rules:
 - IF graphify-out/wiki/index.md EXISTS, navigate it instead of reading raw files
 - For cross-module "how does X relate to Y" questions, prefer `graphify query "<question>"`, `graphify path "<A>" "<B>"`, or `graphify explain "<concept>"` over grep — these traverse the graph's EXTRACTED + INFERRED edges instead of scanning files
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+
+---
+
+## 🛠️ Deferred Improvements — Things to Build Later
+
+Things consciously shelved during the project. Each is a strong interview talking point on its own.
+
+### Transactional Outbox Pattern
+**Discovered:** Day 10, Task 4 (Chaos Day — stopping Kafka mid-upload)
+
+**Problem observed:** `POST /api/videos` does `videoRepository.save()` + `kafkaTemplate.send()` inside one `@Transactional`. When Kafka is down, the transaction rolls back — no data corruption, but uploads break entirely. Kafka becomes a hard dependency for the upload endpoint.
+
+**Solution:**
+1. Save the video AND a row in an `outbox` table inside the same DB transaction.
+2. A background poller reads `outbox` rows and publishes them to Kafka.
+3. Mark each row sent after Kafka ACK.
+
+**Two flavors of the poller:**
+- **Polling outbox** — `SELECT * FROM outbox WHERE sent = false` every N seconds. Easy. Some DB load.
+- **CDC with Debezium** — Debezium tails the Postgres WAL and pushes outbox row changes to Kafka automatically. Zero polling overhead, near-real-time, but requires running Debezium.
+
+**Result:** Uploads only need the DB. Kafka can be down for hours without breaking uploads — events queue in outbox and replay when Kafka returns. THE standard answer to "how do you publish to Kafka without dual-writes?" in interviews.
+
+### Token Bucket Rate Limiter
+**Shelved:** Day 8, Task 1 (Rate Limiter design — chose sliding window counter over token bucket)
+
+**Why we picked sliding window counter:** strictly caps requests over a fixed window — exactly 100 req/min, no bursts. Good for abuse prevention. Used by Stripe, Twitter.
+
+**Why token bucket is sometimes better:**
+- Refills tokens at a constant rate (e.g., 1 token/sec).
+- Bucket has a max capacity (e.g., 100).
+- Each request consumes a token. Empty → 429.
+- A quiet user can save tokens and **burst** when needed — natural for human usage patterns.
+
+**Used in production by:** AWS API Gateway, Stripe, Cloudflare, GitHub. Token bucket is the "user-facing API" choice; sliding window is the "DDoS protection" choice.
+
+**Build idea:** add a second strategy in `RateLimiterInterceptor` that uses token bucket on read-heavy endpoints like `GET /api/videos`, while keeping sliding window on writes.
+
+### Notification Idempotency (Duplicate Prevention)
+**Discovered:** Day 9, Task 3 (NotificationFanOutConsumer design)
+
+**Problem:** If the fan-out consumer crashes mid-loop (after publishing to email + push but before in_app), on restart Kafka replays the `video.published` event. The fan-out runs again. Some subscribers get the same notification twice.
+
+**Solution:** Idempotency keys.
+- Each channel consumer dedupes by `(subscriberId, videoId)` before processing.
+- Use a Redis SET with TTL: `SADD seen:notifications "alice:42"` → if already there, skip.
+- Or a DB unique constraint on `(subscriber_id, video_id, channel)` in `notifications` table.
+
+**Used by:** every payment system on Earth. Stripe explicitly requires `Idempotency-Key` headers for the same reason. Anywhere "exactly-once" matters, idempotency keys are the answer.
+
+### Load Test the Short Links
+**Shelved:** Day 7, Task 6 (load-test 1000 links × 10K hits, measure latency)
+
+**Why it matters:** confirms the Redis cache + scheduled flush actually delivers <5ms redirects under realistic load. Without this, the design is theoretically sound but unproven.
+
+**How to do it:** Use `wrk` or `vegeta`:
+```bash
+echo "GET http://localhost/s/chaos-1" | vegeta attack -rate=10000 -duration=30s | vegeta report
+```
+Look for p50/p95/p99 latencies. Also verify Redis click counter accuracy after the flush job runs.

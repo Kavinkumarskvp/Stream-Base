@@ -9,6 +9,7 @@ import kavin.personal_project.streambase.exception.VideoNotFoundException;
 import kavin.personal_project.streambase.repository.LinkRepository;
 import kavin.personal_project.streambase.repository.VideoRepository;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+@Slf4j
 @Service
 @AllArgsConstructor
 public class LinkService {
@@ -29,6 +31,7 @@ public class LinkService {
     private final VideoRepository videoRepository;
     private final LinkRepository linkRepository;
     private final RedisTemplate<String, String> redisTemplate;
+    private final LinkCacheService linkCacheService;
 
     @Transactional
     public LinkDto createLink(CreateLinkRequest request) {
@@ -81,7 +84,7 @@ public class LinkService {
     @Transactional
     public String redirect(String code) {
 
-        String url = redisTemplate.opsForValue().get("link:" + code);
+        String url = linkCacheService.getUrl(code);
 
         if (url == null) {
             LinkEntity link = linkRepository.findByCode(code).orElseThrow(() -> new LinkNotFoundException(code));
@@ -92,10 +95,10 @@ public class LinkService {
 
             url = "/api/videos/" + link.getVideoId();
             Long ttlSeconds = ChronoUnit.SECONDS.between(LocalDateTime.now(), link.getExpiresAt());
-            redisTemplate.opsForValue().set("link:" + code, url, ttlSeconds, TimeUnit.SECONDS);
+            linkCacheService.cacheUrl(code, url, ttlSeconds);
         }
 
-        redisTemplate.opsForValue().increment("clicks:" + code);
+        linkCacheService.incrementClicks(code);
 
         return url;
     }
@@ -105,13 +108,13 @@ public class LinkService {
     public void flushClickCounts() {
 
         Set<String> keys = redisTemplate.keys("clicks:*");
-        if(keys == null) return;
+        if (keys == null) return;
 
         for (String key : keys) {
             String code = key.substring("clicks:".length());
             String value = redisTemplate.opsForValue().getAndDelete(key);
 
-            if(value != null) {
+            if (value != null) {
                 long count = Long.parseLong(value);
                 linkRepository.incrementClickCount(code, count);
             }
