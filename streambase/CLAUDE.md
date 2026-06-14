@@ -88,7 +88,7 @@ design concepts. Every feature you build maps directly to a real interview quest
 ## My Current Progress
 
 ### 🔄 In Progress
-- [ ] **DAY 11, Task 1** — Define requirements: users see comments appear in real-time while watching
+- [ ] **DAY 14, Task 1** — Create Follow relationship: `user_id` follows `creator_id`
 
 ---
 
@@ -204,7 +204,7 @@ This IS your interview answer for "Design TinyURL".
 - [x] 3. Add redirect: `GET /s/{code}` returns HTTP 302 with video URL
 - [x] 4. Increment `click_count` atomically on each redirect (Redis counter + scheduled flush, Bitly-style)
 - [x] 5. Cache hot links in Redis (manual cache with TTL = link expiry)
-- [ ] 6. Load-test: generate 1000 links, hit random ones 10K times, measure latency
+- [x] 6. Load-test: 10K hits across 1000 links at 500 req/s — p50=0.98ms, p95=4ms, p99=307ms (cold-cache tail), 100% success
 
 **✅ Day 7 Outcome:** StreamBase has shareable short links with click tracking.
 Cached links redirect in <5ms.
@@ -267,13 +267,13 @@ are gold in interviews.
 ### DAY 11 — Live Comments — Design
 **Theme:** Real-Time Systems
 
-- [ ] 1. Define requirements: users see comments appear in real-time while watching
-- [ ] 2. Compare approaches: WebSocket vs SSE vs long polling (write trade-offs)
-- [ ] 3. Choose WebSocket for bidirectional real-time communication
-- [ ] 4. Design: how to handle users connected to different server instances?
-- [ ] 5. Plan: Redis Pub/Sub to broadcast messages across servers
-- [ ] 6. Design message format: `{videoId, userId, text, timestamp}`
-- [ ] 7. Plan storage: recent comments in Redis list, older ones in PostgreSQL
+- [x] 1. Define requirements: users see comments appear in real-time while watching
+- [x] 2. Compare approaches: WebSocket vs SSE vs long polling (write trade-offs)
+- [x] 3. Choose WebSocket for bidirectional real-time communication
+- [x] 4. Design: how to handle users connected to different server instances?
+- [x] 5. Plan: Redis Pub/Sub to broadcast messages across servers
+- [x] 6. Design message format: `{videoId, userId, text, timestamp}`
+- [x] 7. Plan storage: recent comments in Redis list, older ones in PostgreSQL
 
 **✅ Day 11 Outcome:** Complete real-time comment system design. You can explain
 WebSocket vs alternatives with real trade-offs.
@@ -283,13 +283,13 @@ WebSocket vs alternatives with real trade-offs.
 ### DAY 12 — Live Comments — Build Core
 **Theme:** WebSocket Implementation
 
-- [ ] 1. Add `spring-boot-starter-websocket` dependency
-- [ ] 2. Create WebSocket endpoint: `/ws/comments/{videoId}`
-- [ ] 3. Implement: when user sends comment, broadcast to all viewers of that video
-- [ ] 4. Store each comment in PostgreSQL for persistence
-- [ ] 5. Cache last 50 comments per video in Redis (`LPUSH` + `LTRIM`)
-- [ ] 6. On connect: send cached recent comments to the new viewer
-- [ ] 7. Test with 2 browser tabs watching same video — comments appear in real-time
+- [x] 1. Add `spring-boot-starter-websocket` dependency
+- [x] 2. Create WebSocket endpoint: `/ws/comments/{videoId}`
+- [x] 3. Implement: when user sends comment, broadcast to all viewers of that video
+- [x] 4. Store each comment in PostgreSQL for persistence (V6 migration + CommentEntity)
+- [x] 5. Cache last 50 comments per video in Redis (`LPUSH` + `LTRIM`)
+- [x] 6. On connect: send cached recent comments to the new viewer
+- [x] 7. Test with 2 browser tabs watching same video — comments appear in real-time
 
 **✅ Day 12 Outcome:** Live comments work on a single server instance.
 Comments persist and recent ones are cached.
@@ -299,12 +299,12 @@ Comments persist and recent ones are cached.
 ### DAY 13 — Live Comments — Multi-Server
 **Theme:** Cross-Server Messaging
 
-- [ ] 1. Run 2 WebSocket server instances in docker-compose
-- [ ] 2. Problem: User A on Server 1 can't see User B's comments from Server 2
-- [ ] 3. Add Redis Pub/Sub: on new comment, publish to channel `comments:{videoId}`
-- [ ] 4. Each server subscribes to relevant channels and pushes to its local clients
-- [ ] 5. Test: User A connects to Server 1, User B to Server 2 — both see each other's comments
-- [ ] 6. Add presence tracking: store connected users in Redis SET with TTL heartbeat
+- [x] 1. Run 3 WebSocket server instances in docker-compose (existing Day 2 setup)
+- [x] 2. Problem: User A on Server 1 can't see User B's comments from Server 2 (verified bug firsthand)
+- [x] 3. Add Redis Pub/Sub: on new comment, publish to channel `comments:{videoId}`
+- [x] 4. Each server subscribes via `PatternTopic("comments:*")` and pushes to its local clients
+- [x] 5. Test: User A connects to app-1, User B to app-3 — both see each other's comments
+- [x] 6. Presence tracking via Redis ZSET with epoch timestamps + viewer count pushed over WS (not polled)
 
 **✅ Day 13 Outcome:** Comments work across multiple servers. This is the key insight
 interviewers look for in chat system questions.
@@ -394,6 +394,69 @@ Rules:
 
 ---
 
+## 🔀 Optional & Alternative Technologies — Avoided Intentionally
+
+Technologies we considered but didn't use because something better existed.
+
+---
+
+### SSE (Server-Sent Events)
+**Referenced:** Day 11, Task 2 — WebSocket vs SSE vs long polling
+**Alternative to:** WebSocket (what we built)
+**Why we avoided it:**
+- One-way only — browser cannot send data back on the same connection
+- Requires two separate connections (SSE to receive + HTTP POST to send)
+- Less natural for comments where both directions matter equally
+**When it IS the right choice:** Live scores, stock prices, notifications — server-pushes only, no user writes on the stream.
+
+---
+
+### Long Polling
+**Referenced:** Day 11, Task 2 — WebSocket vs SSE vs long polling
+**Alternative to:** WebSocket (what we built)
+**Why we avoided it:**
+- Constant reconnect overhead — new HTTP connection per message cycle
+- ~1-2 second latency — not truly real-time
+- Higher server resource usage (each waiting request holds a thread)
+**When it IS the right choice:** WebSocket is blocked by corporate firewalls, or <1s latency is acceptable.
+
+---
+
+### RabbitMQ
+**Referenced:** Day 5 — original plan, switched to Kafka
+**Alternative to:** Kafka (what we built)
+**Why we avoided it:**
+- No message replay — once consumed, message is gone
+- No consumer groups with offset tracking
+- Lower throughput at scale
+- Less relevant for system design interviews
+**When it IS the right choice:** Task queues, job scheduling, request/reply patterns where routing flexibility matters more than throughput.
+
+---
+
+### Sticky Sessions
+**Referenced:** Day 13 — multi-server WebSocket problem (alternative considered)
+**Alternative to:** Redis Pub/Sub (what we built)
+**Why we avoided it:**
+- All viewers of a popular video get routed to one server — that server dies under load
+- Defeats the purpose of having 3 servers (no real horizontal scaling)
+- If that server crashes, all those users lose their WebSocket connection
+**When it IS the right choice:** Small scale, single datacenter, simple setups where load isn't a concern.
+
+---
+
+### Kafka (as a WebSocket broadcast mechanism)
+**Referenced:** Day 13 — multi-server WebSocket problem (alternative considered)
+**Alternative to:** Redis Pub/Sub (what we built)
+**Why we avoided it:**
+- Writes every comment to disk for durability — unnecessary since PostgreSQL already stores comments permanently
+- Requires 3 separate consumer groups (one per app instance) — extra overhead
+- ~10-50ms latency vs Redis Pub/Sub's ~1ms
+- Built for durable, replayable event streams — overkill for fire-and-forget broadcasts
+**When it IS the right choice:** When broadcast messages also need durability and replay (e.g. audit logs, financial events). Not for live chat.
+
+---
+
 ## 🛠️ Deferred Improvements — Things to Build Later
 
 Things consciously shelved during the project. Each is a strong interview talking point on its own.
@@ -441,13 +504,3 @@ Things consciously shelved during the project. Each is a strong interview talkin
 
 **Used by:** every payment system on Earth. Stripe explicitly requires `Idempotency-Key` headers for the same reason. Anywhere "exactly-once" matters, idempotency keys are the answer.
 
-### Load Test the Short Links
-**Shelved:** Day 7, Task 6 (load-test 1000 links × 10K hits, measure latency)
-
-**Why it matters:** confirms the Redis cache + scheduled flush actually delivers <5ms redirects under realistic load. Without this, the design is theoretically sound but unproven.
-
-**How to do it:** Use `wrk` or `vegeta`:
-```bash
-echo "GET http://localhost/s/chaos-1" | vegeta attack -rate=10000 -duration=30s | vegeta report
-```
-Look for p50/p95/p99 latencies. Also verify Redis click counter accuracy after the flush job runs.

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StreamBase — Live Comments</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 { color: #333; }
+
+        #join-section {
+            margin-bottom: 16px;
+        }
+
+        #name-input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 160px;
+            font-size: 1em;
+        }
+
+        #join-btn {
+            padding: 8px 16px;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+
+        #name-display {
+            display: none;
+            font-weight: bold;
+            color: #1a73e8;
+        }
+
+        #comment-feed {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            height: 350px;
+            overflow-y: scroll;
+            padding: 12px;
+            margin-bottom: 12px;
+            background: #fafafa;
+        }
+
+        .comment {
+            margin-bottom: 8px;
+        }
+
+        .comment .username {
+            font-weight: bold;
+            color: #1a73e8;
+        }
+
+        .comment .time {
+            font-size: 0.75em;
+            color: #999;
+            margin-left: 8px;
+        }
+
+        /* join/leave events — styled differently from comments */
+        .user-event {
+            text-align: center;
+            font-style: italic;
+            font-size: 0.85em;
+            color: #aaa;
+            margin: 6px 0;
+        }
+
+        #input-row {
+            display: none; /* hidden until joined */
+            gap: 8px;
+        }
+
+        #input-row.visible {
+            display: flex;
+        }
+
+        #message-input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #send-btn {
+            padding: 8px 16px;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #status {
+            font-size: 0.85em;
+            color: #999;
+            margin-left: 12px;
+        }
+
+        #reconnect-btn {
+            display: none;
+            padding: 6px 12px;
+            background: #e57373;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 8px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Live Comments — Video <span id="video-id-label"></span>
+    <span id="status">—</span>
+    &nbsp;👥 <span id="viewer-count">0</span> watching
+</h2>
+
+<div id="join-section">
+    <input id="name-input" placeholder="Enter your name" maxlength="20">
+    <button id="join-btn" onclick="join()">Join</button>
+    <span id="name-display"></span>
+    <button id="reconnect-btn" onclick="reconnect()">Reconnect</button>
+</div>
+
+<div id="comment-feed"></div>
+
+<div id="input-row">
+    <input id="message-input" placeholder="Type a comment and press Enter">
+    <button id="send-btn" onclick="sendComment()">Send</button>
+</div>
+
+<script src="/comments.js"></script>
+
+</body>
+</html>
