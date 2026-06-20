@@ -10,6 +10,8 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
+import java.time.ZoneOffset;
+
 @Component
 @Log
 @RequiredArgsConstructor
@@ -34,7 +36,11 @@ public class VideoProcesscor {
 
             videoRepository.findById(event.videoId()).ifPresent(video -> {
 
-                VideoPublishedEvent publishedEvent = new VideoPublishedEvent(video.getId(), video.getTitle(), video.getUploadedBy());
+                VideoPublishedEvent publishedEvent = new VideoPublishedEvent(
+                        video.getId(),
+                        video.getTitle(),
+                        video.getUploadedBy(),
+                        video.getCreatedAt().atZone(ZoneOffset.UTC).toInstant().toEpochMilli());
                 kafkaTemplate.send("video.published", publishedEvent);
             });
 

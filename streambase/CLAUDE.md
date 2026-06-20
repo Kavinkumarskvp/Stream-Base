@@ -88,7 +88,7 @@ design concepts. Every feature you build maps directly to a real interview quest
 ## My Current Progress
 
 ### 🔄 In Progress
-- [ ] **DAY 14, Task 1** — Create Follow relationship: `user_id` follows `creator_id`
+- [ ] **DAY 15, Task 1** — Implement a consistent hashing ring in Java (~50 lines)
 
 ---
 
@@ -314,13 +314,14 @@ interviewers look for in chat system questions.
 ### DAY 14 — Subscription Feed ("For You" Page)
 **Theme:** Feed Generation + Fan-Out
 
-- [ ] 1. Create Follow relationship: `user_id` follows `creator_id`
-- [ ] 2. Build pull model first: `GET /api/feed` queries all followed creators' recent videos
-- [ ] 3. Measure: with 100 follows x 50 videos each, how slow is the query?
-- [ ] 4. Build push model: on new video, write entry to each follower's feed in Redis
-- [ ] 5. `GET /api/feed` now just reads pre-computed Redis list — compare speed
-- [ ] 6. Discuss: what about creators with 1M followers? (celebrity problem)
-- [ ] 7. Implement hybrid: push for normal users, pull for celebrities (>10K followers)
+- [x] 1. Follow relationship — reused Day 9's `subscriptions` table (semantically identical)
+- [x] 2. Build pull model: `GET /api/feed?mode=pull` queries followed creators' recent videos
+- [x] 3. Measure: 100 follows × 50 videos baseline = ~7-12ms warm latency (composite index)
+- [x] 4. Build push model: Kafka `feed-fanout` consumer writes to Redis ZSET (score = timestamp)
+- [x] 5. `GET /api/feed` reads from ZSET first — comparable warm latency at this scale
+- [x] 6. Celebrity problem: 1 ZADD × N followers = bieber-problem (~14h for 10M followers)
+- [x] 7. Hybrid: `CreatorTierService` skips fan-out for ≥10K-follower creators; feed merges
+       push (ZSET) + pull (celebrity creators) at read time, bounded cost per request
 
 **✅ Day 14 Outcome:** StreamBase has a personalized feed. You can explain fan-out
 on read vs write and the celebrity problem.
@@ -340,6 +341,22 @@ on read vs write and the celebrity problem.
 
 **✅ Day 15 Outcome:** StreamBase data is distributed across shards. You understand
 consistent hashing, rebalancing, and hot spots.
+
+---
+
+### DAY 16 — Full-Text Search with Elasticsearch
+**Theme:** Search + Inverted Indexes
+
+- [ ] 1. Design: write requirements — what queries, scale estimates (100K videos, 1K searches/sec)
+- [ ] 2. Add Elasticsearch 8.x to docker-compose
+- [ ] 3. Add `spring-boot-starter-data-elasticsearch` dependency
+- [ ] 4. Sync: on video status=READY, index the video into Elasticsearch (via existing Kafka event)
+- [ ] 5. Implement `GET /api/search?q=cooking&page=0` — full-text on title + description
+- [ ] 6. Add autocomplete: `GET /api/search/suggest?q=cook` using edge n-gram analyzer
+- [ ] 7. Compare: PostgreSQL `ILIKE '%cooking%'` vs Elasticsearch on 10K videos — measure latency difference
+
+**✅ Day 16 Outcome:** StreamBase has fast full-text search. You understand inverted indexes,
+analyzers, and why PostgreSQL LIKE is slow at scale. Direct answer to "how does YouTube search work".
 
 ---
 
@@ -368,6 +385,11 @@ Map each concept to the StreamBase feature where you implemented it.
 - [ ] **Fan-out (Read vs Write)** (Day 14) — Subscription feed generation
 - [ ] **Consistent Hashing** (Day 15) — Data distribution across DB shards
 - [ ] **Back-of-Envelope Math** (Day 6+) — QPS, storage, bandwidth for StreamBase
+
+### Search
+- [ ] **Full-Text Search** (Day 16) — Elasticsearch for video title/description search
+- [ ] **Inverted Index** (Day 16) — how Elasticsearch stores and queries text at scale
+- [ ] **Autocomplete** (Day 16) — edge n-gram analyzer for prefix search
 
 ---
 
