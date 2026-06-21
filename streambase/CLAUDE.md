@@ -88,7 +88,7 @@ design concepts. Every feature you build maps directly to a real interview quest
 ## My Current Progress
 
 ### 🔄 In Progress
-- [ ] **DAY 15, Task 1** — Implement a consistent hashing ring in Java (~50 lines)
+- [ ] **DAY 16, Task 1** — Design: write requirements — what queries, scale estimates
 
 ---
 
@@ -331,13 +331,15 @@ on read vs write and the celebrity problem.
 ### DAY 15 — Shard the Video Database
 **Theme:** Consistent Hashing + Sharding
 
-- [ ] 1. Implement a consistent hashing ring in Java (~50 lines)
-- [ ] 2. Create 2 PostgreSQL instances (shard-1, shard-2) in docker-compose
-- [ ] 3. Hash video IDs to determine which shard stores each video
-- [ ] 4. Implement `ShardRouter`: routes queries to correct shard based on hash
-- [ ] 5. Insert 1000 videos — verify roughly even distribution across shards
-- [ ] 6. Add shard-3: observe that only ~1/3 of keys need to move (not all)
-- [ ] 7. Write down: how would you handle a hot shard? (rebalancing strategies)
+- [x] 1. ConsistentHashRing.java — TreeMap-backed ring with virtual nodes (MD5-hashed), O(log N) lookup
+- [x] 2. Created 2 (then 3) PostgreSQL shard instances in docker-compose
+- [x] 3. Snowflake ID generator + ring.getShard(id) decides which shard stores each video
+- [x] 4. ShardRouter: per-shard JdbcTemplate map, save/findById/distribution/rebalance ops
+- [x] 5. Inserted ~263 videos (rate-limited) — distribution 122/141 ≈ 46/54 (within tolerance)
+- [x] 6. Added shard-3 + rebalance() — observed 29.3% of keys moved (theoretical 1/3),
+       new distribution 79/107/77
+- [x] 7. Hot shard write-up: caching, hot-row replication, sub-sharding, dedicated shards,
+       per-key rate limiting — documented in interview-prep notes
 
 **✅ Day 15 Outcome:** StreamBase data is distributed across shards. You understand
 consistent hashing, rebalancing, and hot spots.

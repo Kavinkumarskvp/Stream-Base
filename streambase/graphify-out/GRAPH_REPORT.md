@@ -1,12 +1,12 @@
-# Graph Report - .  (2026-06-20)
+# Graph Report - .  (2026-06-21)
 
 ## Corpus Check
-- 9 files · ~0 words
+- 6 files · ~0 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 256 nodes · 300 edges · 42 communities (18 shown, 24 thin omitted)
-- Extraction: 84% EXTRACTED · 16% INFERRED · 0% AMBIGUOUS · INFERRED: 47 edges (avg confidence: 0.83)
+- 276 nodes · 329 edges · 44 communities (19 shown, 25 thin omitted)
+- Extraction: 84% EXTRACTED · 16% INFERRED · 0% AMBIGUOUS · INFERRED: 51 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -30,11 +30,10 @@
 - [[_COMMUNITY_Community 17|Community 17]]
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Community 19|Community 19]]
-- [[_COMMUNITY_Community 21|Community 21]]
-- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 22|Community 22]]
 - [[_COMMUNITY_Community 24|Community 24]]
 - [[_COMMUNITY_Community 25|Community 25]]
-- [[_COMMUNITY_Community 26|Community 26]]
 - [[_COMMUNITY_Community 27|Community 27]]
 - [[_COMMUNITY_Community 28|Community 28]]
 - [[_COMMUNITY_Community 29|Community 29]]
@@ -42,9 +41,11 @@
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
 - [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
 - [[_COMMUNITY_Community 35|Community 35]]
 - [[_COMMUNITY_Community 37|Community 37]]
-- [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
+- [[_COMMUNITY_Community 40|Community 40]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `KafkaConfig` - 17 edges
@@ -52,11 +53,11 @@
 3. `Redis (Docker Service)` - 8 edges
 4. `CommentWebSocketHandler` - 8 edges
 5. `RateLimiterInterceptor` - 7 edges
-6. `VideoController` - 6 edges
-7. `postgres-primary (Docker Service)` - 6 edges
-8. `application-dev.yaml (Dev Profile Config)` - 6 edges
-9. `Primary DataSource` - 6 edges
-10. `Replica DataSource` - 6 edges
+6. `ShardRouter` - 7 edges
+7. `VideoController` - 6 edges
+8. `postgres-primary (Docker Service)` - 6 edges
+9. `application-dev.yaml (Dev Profile Config)` - 6 edges
+10. `Primary DataSource` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Redis Pub/Sub for Cross-Server Comments` --conceptually_related_to--> `Redis (Docker Service)`  [INFERRED]
@@ -70,15 +71,15 @@
 - `Sliding Window Rate Limiting via Redis` --conceptually_related_to--> `Redis (Docker Service)`  [INFERRED]
   CLAUDE.md → compose.yaml
 
-## Communities (42 total, 24 thin omitted)
+## Communities (44 total, 25 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.12
-Nodes (27): application-dev.yaml (Dev Profile Config), application.yaml (Base Config), application.yaml (Spring Boot Config), open-in-view: false, Cache-Aside Pattern, Consistent Hashing for DB Sharding, Database Read Replication, Day 4 Database Replication Completed (+19 more)
+Cohesion: 0.09
+Nodes (6): NotificationFanOutConsumer, SubscriptionController, VideoRepository, CreatorTierService, FeedService, SubscriptionService
 
 ### Community 1 - "Community 1"
-Cohesion: 0.15
-Nodes (5): VideoController, NotificationMapper, VideoMapper, CommentRepository, CommentService
+Cohesion: 0.12
+Nodes (27): application-dev.yaml (Dev Profile Config), application.yaml (Base Config), application.yaml (Spring Boot Config), open-in-view: false, Cache-Aside Pattern, Consistent Hashing for DB Sharding, Database Read Replication, Day 4 Database Replication Completed (+19 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.13
@@ -93,46 +94,48 @@ Cohesion: 0.17
 Nodes (10): DB_PASSWORD Environment Variable, DB_REPLICA_URL Environment Variable, DB_URL Environment Variable, DB_USERNAME Environment Variable, Read Replica Pattern, Redis Configuration, REDIS_HOST Environment Variable, REDIS_PORT Environment Variable (+2 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.16
-Nodes (4): NotificationFanOutConsumer, SubscriptionController, CreatorTierService, SubscriptionService
+Cohesion: 0.23
+Nodes (3): VideoController, NotificationMapper, VideoMapper
 
 ### Community 8 - "Community 8"
 Cohesion: 0.29
 Nodes (9): appendComment(), appendToFeed(), appendUserEvent(), connect(), formatTime(), join(), params, reconnect() (+1 more)
 
-### Community 11 - "Community 11"
+### Community 12 - "Community 12"
 Cohesion: 0.29
 Nodes (3): NotificationController, NotificationRepository, NotificationService
 
-### Community 12 - "Community 12"
+### Community 13 - "Community 13"
 Cohesion: 0.33
 Nodes (5): CommentEntity, LinkEntity, NotificationEntity, SubscriptionEntity, VideoEntity
 
-### Community 15 - "Community 15"
+### Community 16 - "Community 16"
 Cohesion: 0.5
 Nodes (4): LinkExpiredException, LinkNotFoundException, VideoNotFoundException, RuntimeException
 
-### Community 17 - "Community 17"
+### Community 18 - "Community 18"
 Cohesion: 0.5
 Nodes (3): EmailNotificationConsumer, InAppNotificationConsumer, PushNotificationConsumer
 
 ## Knowledge Gaps
 - **41 isolated node(s):** `UpdateVideoRequest`, `CreateVideoRequest`, `VideoDto`, `VideoEntity`, `HealthController` (+36 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **24 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **25 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `LinkService` connect `Community 2` to `Community 1`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `LinkService` connect `Community 2` to `Community 7`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `CommentService` connect `Community 9` to `Community 7`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **Are the 4 inferred relationships involving `Redis (Docker Service)` (e.g. with `Cache-Aside Pattern` and `Sliding Window Rate Limiting via Redis`) actually correct?**
   _`Redis (Docker Service)` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `UpdateVideoRequest`, `CreateVideoRequest`, `VideoDto` to the rest of the system?**
   _41 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.09 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.13 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.14 - nodes in this community are weakly interconnected._
