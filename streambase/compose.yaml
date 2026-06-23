@@ -64,6 +64,21 @@ services:
     volumes:
       - shard-3-data:/var/lib/postgresql
 
+  elasticsearch:
+    image: elasticsearch:9.4.2
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+
   redis:
     image: redis:8.6.2-alpine
     ports:
@@ -98,6 +113,7 @@ services:
       - SHARD_DB_PASSWORD=secret
       - DB_USERNAME=myuser
       - DB_PASSWORD=secret
+      - ELASTICSEARCH_URI=http://elasticsearch:9200
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
@@ -110,6 +126,7 @@ services:
       - shard-1
       - shard-2
       - shard-3
+      - elasticsearch
       - redis
       - kafka
 
@@ -126,6 +143,7 @@ services:
       - SHARD_DB_PASSWORD=secret
       - DB_USERNAME=myuser
       - DB_PASSWORD=secret
+      - ELASTICSEARCH_URI=http://elasticsearch:9200
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
@@ -135,6 +153,7 @@ services:
       - shard-1
       - shard-2
       - shard-3
+      - elasticsearch
       - redis
       - kafka
 
@@ -151,6 +170,7 @@ services:
       - SHARD_DB_PASSWORD=secret
       - DB_USERNAME=myuser
       - DB_PASSWORD=secret
+      - ELASTICSEARCH_URI=http://elasticsearch:9200
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
@@ -160,6 +180,7 @@ services:
       - shard-1
       - shard-2
       - shard-3
+      - elasticsearch
       - redis
       - kafka
 
@@ -180,3 +201,4 @@ volumes:
   shard-1-data:
   shard-2-data:
   shard-3-data:
+  elasticsearch-data:

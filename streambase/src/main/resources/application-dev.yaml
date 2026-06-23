@@ -16,5 +16,7 @@ spring:
       connect-timeout: 500ms
       lettuce:
         shutdown-timeout: 100ms
+  elasticsearch:
+    uris: ${ELASTICSEARCH_URI}
   kafka:
     bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}

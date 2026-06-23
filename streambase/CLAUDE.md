@@ -87,8 +87,11 @@ design concepts. Every feature you build maps directly to a real interview quest
 
 ## My Current Progress
 
-### 🔄 In Progress
-- [ ] **DAY 16, Task 1** — Design: write requirements — what queries, scale estimates
+### ✅ Project Complete
+All 16 days finished. StreamBase covers the full system-design curriculum: load balancing,
+caching, replication, async processing, rate limiting, notifications, chaos engineering,
+real-time WebSocket chat, subscription feeds (push/pull hybrid), database sharding, and
+full-text search.
 
 ---
 
@@ -349,13 +352,18 @@ consistent hashing, rebalancing, and hot spots.
 ### DAY 16 — Full-Text Search with Elasticsearch
 **Theme:** Search + Inverted Indexes
 
-- [ ] 1. Design: write requirements — what queries, scale estimates (100K videos, 1K searches/sec)
-- [ ] 2. Add Elasticsearch 8.x to docker-compose
-- [ ] 3. Add `spring-boot-starter-data-elasticsearch` dependency
-- [ ] 4. Sync: on video status=READY, index the video into Elasticsearch (via existing Kafka event)
-- [ ] 5. Implement `GET /api/search?q=cooking&page=0` — full-text on title + description
-- [ ] 6. Add autocomplete: `GET /api/search/suggest?q=cook` using edge n-gram analyzer
-- [ ] 7. Compare: PostgreSQL `ILIKE '%cooking%'` vs Elasticsearch on 10K videos — measure latency difference
+- [x] 1. Requirements: title+description search, sub-100ms p95, sync via existing Kafka event,
+       failure mode = 503 (no SQL fallback)
+- [x] 2. Added Elasticsearch (single-node, dev mode) to compose.yaml — port 9200
+- [x] 3. Added spring-boot-starter-data-elasticsearch — auto-configured client
+- [x] 4. SearchIndexConsumer subscribes to video.published with groupId=search-indexer;
+       VideoSearchDocument indexes title (multi-field), description, uploadedBy (keyword), createdAt
+- [x] 5. GET /api/search?q=... — multi_match across title^3 + description, fuzziness AUTO,
+       Spring Data Page response
+- [x] 6. GET /api/search/suggest?q=cook — custom edge_ngram analyzer (min_gram=2, max_gram=20)
+       on title.autocomplete sub-field, settings loaded from elasticsearch/autocomplete_settings.json
+- [x] 7. Comparison: at 5K rows, SQL ILIKE wins (3-7ms vs ES 7-22ms). Crossover ~100K rows.
+       Real ES value is FEATURES (ranking, fuzziness, autocomplete, aggregations), not raw speed.
 
 **✅ Day 16 Outcome:** StreamBase has fast full-text search. You understand inverted indexes,
 analyzers, and why PostgreSQL LIKE is slow at scale. Direct answer to "how does YouTube search work".
@@ -527,4 +535,37 @@ Things consciously shelved during the project. Each is a strong interview talkin
 - Or a DB unique constraint on `(subscriber_id, video_id, channel)` in `notifications` table.
 
 **Used by:** every payment system on Earth. Stripe explicitly requires `Idempotency-Key` headers for the same reason. Anywhere "exactly-once" matters, idempotency keys are the answer.
+
+### Bloom Filter / Cuckoo Filter (Search Query Guard)
+**Relevant to:** Day 16 — Elasticsearch
+
+**Problem:** Zero-result search queries (`GET /api/search?q=xyznonexistent`) hit
+Elasticsearch every time — wasted network + CPU. At high QPS this becomes measurable load.
+
+**Solution:** Put a probabilistic filter in front of ES:
+- **Bloom filter** — `BF.EXISTS` in Redis Stack. Definite "no" = skip ES entirely.
+  Cannot delete entries — bad for StreamBase since videos can be unpublished.
+- **Cuckoo filter** — `CF.EXISTS` in Redis Stack. Same behavior but supports deletion.
+  Better choice here because videos can be deleted.
+
+**How it fits the existing architecture:**
+1. `SearchIndexConsumer` (Day 16) indexes video → also runs `CF.ADD videoTerms {term}`
+   for each word in title + description.
+2. `GET /api/search?q=cooking` → `CF.EXISTS videoTerms cooking` → 0 means definitely
+   not indexed → return `[]` immediately, skip ES entirely.
+3. On startup: scan ES index for all indexed terms, rebuild filter in Redis.
+
+**False positive rate:** ~1% tunable. 1% of zero-result queries still reach ES — acceptable.
+
+**When to actually add it:** Only when you can measure zero-result queries causing ES load.
+Don't add it speculatively.
+
+**Industrial precedent:** Cassandra uses Bloom filters per SSTable (cheap RAM check before
+expensive disk read — same pattern). Chrome Safe Browsing uses Bloom filters for malicious
+URL detection without sending every URL to Google.
+
+**Implementation options:**
+- Redis Stack `CF.*` commands — shared across all app instances, AOF-persistent ← preferred
+- `cuckoofilter4j` Java library — in-process, no new service, but each app instance
+  has its own filter (rebuild from ES on startup)
 
