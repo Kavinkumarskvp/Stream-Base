@@ -78,6 +78,12 @@ services:
       memlock:
         soft: -1
         hard: -1
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:9200/_cluster/health || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 30s
 
   redis:
     image: redis:8.6.2-alpine
@@ -121,14 +127,22 @@ services:
     ports:
       - "5005:5005"
     depends_on:
-      - postgres-primary
-      - postgres-replica
-      - shard-1
-      - shard-2
-      - shard-3
-      - elasticsearch
-      - redis
-      - kafka
+      postgres-primary:
+        condition: service_started
+      postgres-replica:
+        condition: service_started
+      shard-1:
+        condition: service_started
+      shard-2:
+        condition: service_started
+      shard-3:
+        condition: service_started
+      elasticsearch:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      kafka:
+        condition: service_started
 
   app-2:
     build: .
@@ -148,14 +162,22 @@ services:
       - REDIS_PORT=6379
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
     depends_on:
-      - postgres-primary
-      - postgres-replica
-      - shard-1
-      - shard-2
-      - shard-3
-      - elasticsearch
-      - redis
-      - kafka
+      postgres-primary:
+        condition: service_started
+      postgres-replica:
+        condition: service_started
+      shard-1:
+        condition: service_started
+      shard-2:
+        condition: service_started
+      shard-3:
+        condition: service_started
+      elasticsearch:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      kafka:
+        condition: service_started
 
   app-3:
     build: .
@@ -175,14 +197,22 @@ services:
       - REDIS_PORT=6379
       - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
     depends_on:
-      - postgres-primary
-      - postgres-replica
-      - shard-1
-      - shard-2
-      - shard-3
-      - elasticsearch
-      - redis
-      - kafka
+      postgres-primary:
+        condition: service_started
+      postgres-replica:
+        condition: service_started
+      shard-1:
+        condition: service_started
+      shard-2:
+        condition: service_started
+      shard-3:
+        condition: service_started
+      elasticsearch:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      kafka:
+        condition: service_started
 
   nginx:
     image: nginx:1.29.8-alpine
