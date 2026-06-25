@@ -1,0 +1,10 @@
+# Override GitHub language detection
+# Prevent HTML/CSS/JS from showing as primary language
+
+*.html linguist-detectable=false
+*.css  linguist-detectable=false
+*.js   linguist-detectable=false
+
+# Mark docs and markdown as documentation (not counted)
+*.md linguist-documentation=true
+docs/** linguist-documentation=true
